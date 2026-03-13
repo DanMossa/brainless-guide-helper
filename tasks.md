@@ -8,14 +8,14 @@
 - [x] Create a prototype JSON file for Chapter 1.1 based on the provided guide text.
 
 ## Phase 2: Core Plugin Infrastructure
-- [ ] Implement Java models for the JSON data.
-- [ ] Implement a `GuideManager` to load and parse the JSON guide.
-- [ ] Implement `Requirement` interface and its various implementations:
+- [x] Implement Java models for the JSON data.
+- [x] Implement a `GuideManager` to load and parse the JSON guide.
+- [x] Implement `Requirement` interface and its various implementations:
     - `QuestRequirement`
     - `SkillRequirement`
     - `ItemRequirement`
     - `DiaryRequirement`
-- [ ] Implement `PlayerStateTracker` to keep track of:
+- [x] Implement `PlayerStateTracker` to keep track of:
     - Quest progress (using `QuestState`).
     - Skill levels and XP.
     - Inventory and Bank contents (using `ItemContainer`).
