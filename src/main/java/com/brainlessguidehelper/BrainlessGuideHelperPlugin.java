@@ -1,9 +1,9 @@
 package com.brainlessguidehelper;
 
+import com.brainlessguidehelper.models.Step;
 import com.google.inject.Provides;
 import javax.inject.Inject;
 import lombok.extern.slf4j.Slf4j;
-import net.runelite.api.ChatMessageType;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.api.events.GameStateChanged;
@@ -32,6 +32,9 @@ public class BrainlessGuideHelperPlugin extends Plugin
 	private PlayerStateTracker playerStateTracker;
 
 	@Inject
+	private GuideProgressManager guideProgressManager;
+
+	@Inject
 	private EventBus eventBus;
 
 	@Override
@@ -54,12 +57,20 @@ public class BrainlessGuideHelperPlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			Step currentStep = guideProgressManager.getCurrentStep();
+			if (currentStep != null)
+			{
+				log.debug("Current step: {} - {}", currentStep.getId(), currentStep.getInstructions());
+			}
+			else
+			{
+				log.debug("All guide steps complete!");
+			}
 		}
 	}
 
 	@Provides
-    BrainlessGuideHelperConfig provideConfig(ConfigManager configManager)
+	BrainlessGuideHelperConfig provideConfig(ConfigManager configManager)
 	{
 		return configManager.getConfig(BrainlessGuideHelperConfig.class);
 	}

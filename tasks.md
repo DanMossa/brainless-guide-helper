@@ -22,13 +22,13 @@
     - Achievement Diary progress (Varbit/Varp checks).
 
 ## Phase 3: Guide Logic & Progress Tracking
-- [ ] Implement logic to evaluate `CompletionConditions` against current `PlayerState`.
-- [ ] Support for Step Options:
+- [x] Implement logic to evaluate `CompletionConditions` against current `PlayerState`.
+- [x] Support for Step Options:
     - Allow users to select which option they are taking for a step (e.g. 98 vs 99 FM).
     - Save these preferences in the plugin configuration.
-- [ ] Support for manual completion:
+- [x] Support for manual completion:
     - Allow users to "Check off" a step if auto-detection is not possible or desired.
-- [ ] Determine the "current step" based on progress.
+- [x] Determine the "current step" based on progress.
 
 ## Phase 4: User Interface
 - [ ] Create a `GuidePanel` (extends `PluginPanel`) to display the guide.
