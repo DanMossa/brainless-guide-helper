@@ -1,11 +1,11 @@
 # Bruhsailor Ironman Guide Helper - Tasks
 
 ## Phase 1: Data Modeling & Schema
-- [ ] Define the JSON schema for the guide (`guide-schema.json`).
-    - [ ] Structure: Chapters -> Sections -> Steps.
-    - [ ] Step model: Instructions, Prerequisites, Completion Conditions, Options.
-    - [ ] Completion conditions types: `QUEST`, `SKILL`, `ITEM` (Inventory/Bank/Equipped), `DIARY`, `LEVEL_VARIABLE`.
-- [ ] Create a prototype JSON file for Chapter 1.1 based on the provided guide text.
+- [x] Define the JSON schema for the guide (`guide-schema.json`).
+    - [x] Structure: Chapters -> Sections -> Steps.
+    - [x] Step model: Instructions, Prerequisites, Completion Conditions, Options.
+    - [x] Completion conditions types: `QUEST`, `SKILL`, `ITEM` (Inventory/Bank/Equipped), `DIARY`, `LEVEL_VARIABLE`.
+- [x] Create a prototype JSON file for Chapter 1.1 based on the provided guide text.
 
 ## Phase 2: Core Plugin Infrastructure
 - [ ] Implement Java models for the JSON data.
