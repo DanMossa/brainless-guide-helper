@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Bruhsailor Guide Schema",
+  "type": "object",
+  "properties": {
+    "chapters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "title": { "type": "string" },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "title": { "type": "string" },
+                "steps": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/step" }
+                }
+              },
+              "required": ["id", "title", "steps"]
+            }
+          }
+        },
+        "required": ["id", "title", "sections"]
+      }
+    }
+  },
+  "definitions": {
+    "step": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "instructions": { "type": "string" },
+        "expected_gp": { "type": "integer" },
+        "time_minutes": { "type": "integer" },
+        "prerequisites": { "type": "array", "items": { "$ref": "#/definitions/requirement" } },
+        "completion_conditions": { "type": "array", "items": { "$ref": "#/definitions/requirement" } },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "completion_conditions": { "type": "array", "items": { "$ref": "#/definitions/requirement" } }
+            },
+            "required": ["id", "label", "completion_conditions"]
+          }
+        }
+      },
+      "required": ["id", "instructions"]
+    },
+    "requirement": {
+      "type": "object",
+      "properties": {
+        "type": { "enum": ["SKILL", "QUEST", "ITEM", "DIARY", "VARBIT", "VARP"] },
+        "id": { "type": ["string", "integer"] },
+        "amount": { "type": "integer" },
+        "status": { "type": "string" },
+        "level": { "type": "integer" },
+        "location": { "enum": ["INVENTORY", "BANK", "EQUIPPED", "ANY"] }
+      },
+      "required": ["type", "id"]
+    }
+  }
+}

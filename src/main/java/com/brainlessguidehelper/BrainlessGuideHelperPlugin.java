@@ -24,10 +24,14 @@ public class BrainlessGuideHelperPlugin extends Plugin
 	@Inject
 	private BrainlessGuideHelperConfig config;
 
+	@Inject
+	private GuideManager guideManager;
+
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.debug("Example started!");
+		guideManager.loadGuide();
+		log.debug("Brainless Guide Helper started!");
 	}
 
 	@Override
