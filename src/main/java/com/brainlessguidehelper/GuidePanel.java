@@ -183,6 +183,7 @@ public class GuidePanel extends PluginPanel
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 60));
+		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		GridBagConstraints gbc = new GridBagConstraints();
 		gbc.gridx = 0;
@@ -217,6 +218,7 @@ public class GuidePanel extends PluginPanel
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		boolean complete = cachedViewedStepComplete;
 
@@ -254,6 +256,7 @@ public class GuidePanel extends PluginPanel
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		JLabel titleLabel = new JLabel(title);
 		titleLabel.setFont(FontManager.getRunescapeBoldFont());
@@ -285,6 +288,7 @@ public class GuidePanel extends PluginPanel
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		JLabel titleLabel = new JLabel("Options");
 		titleLabel.setFont(FontManager.getRunescapeBoldFont());
@@ -324,6 +328,7 @@ public class GuidePanel extends PluginPanel
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
+		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		JCheckBox checkbox = new JCheckBox("Mark as complete");
 		checkbox.setFont(FontManager.getRunescapeSmallFont());
@@ -346,6 +351,7 @@ public class GuidePanel extends PluginPanel
 		panel.setBackground(ColorScheme.DARK_GRAY_COLOR);
 		panel.setBorder(new EmptyBorder(10, 0, 0, 0));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
+		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		GridBagConstraints gbc = new GridBagConstraints();
 		gbc.fill = GridBagConstraints.HORIZONTAL;
