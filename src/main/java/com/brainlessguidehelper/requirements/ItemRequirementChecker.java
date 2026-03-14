@@ -154,6 +154,19 @@ public class ItemRequirementChecker implements RequirementChecker
 	}
 
 	/**
+	 * Clears both the in-memory bank cache and the persisted config storage.
+	 */
+	public void clearBankCache(ConfigManager configManager)
+	{
+		bankCache.clear();
+		if (configManager != null)
+		{
+			configManager.unsetConfiguration(CONFIG_GROUP, BANK_CACHE_KEY);
+		}
+		log.debug("Bank cache cleared (in-memory and persisted)");
+	}
+
+	/**
 	 * Loads the bank cache from RuneLite's config storage.
 	 */
 	public void loadBankCache(ConfigManager configManager)

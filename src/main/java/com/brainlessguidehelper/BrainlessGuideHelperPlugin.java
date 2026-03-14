@@ -10,6 +10,7 @@ import net.runelite.api.GameState;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
 import net.runelite.client.config.ConfigManager;
+import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.eventbus.EventBus;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
@@ -44,6 +45,9 @@ public class BrainlessGuideHelperPlugin extends Plugin
 
 	@Inject
 	private ClientToolbar clientToolbar;
+
+	@Inject
+	private ConfigManager configManager;
 
 	private GuidePanel guidePanel;
 	private NavigationButton navigationButton;
@@ -94,6 +98,19 @@ public class BrainlessGuideHelperPlugin extends Plugin
 	{
 		guidePanel.updateDataOnClientThread();
 		guidePanel.rebuild();
+	}
+
+	@Subscribe
+	public void onConfigChanged(ConfigChanged event)
+	{
+		if ("brainlessguidehelper".equals(event.getGroup())
+			&& "deleteBankCache".equals(event.getKey())
+			&& "true".equals(event.getNewValue()))
+		{
+			playerStateTracker.clearBankCache();
+			configManager.setConfiguration("brainlessguidehelper", "deleteBankCache", false);
+			log.info("Bank cache deleted via debug config button");
+		}
 	}
 
 	@Provides

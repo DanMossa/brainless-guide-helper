@@ -163,6 +163,14 @@ public class PlayerStateTracker
 		return true;
 	}
 
+	/**
+	 * Clears the bank cache (both in-memory and persisted).
+	 */
+	public void clearBankCache()
+	{
+		itemRequirementChecker.clearBankCache(configManager);
+	}
+
 	public boolean isLoggedIn()
 	{
 		return loggedIn;
