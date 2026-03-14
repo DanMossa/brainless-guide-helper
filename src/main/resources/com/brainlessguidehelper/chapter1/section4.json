@@ -306,6 +306,192 @@
                     "status": "COMPLETED"
                 }
             ]
+        },
+        {
+            "id": 11,
+            "instructions": "Train woodcutting to 70, 2t teaks at the trees north of Soul Wars is recommended. If you want/need more rewards from forestry instead do this on a forestry world - you likely can't 2t there as people kill the birds. Use fairy ring BJP to get there - either using a necklace of passage to the wizards' tower, or swapping to the Arceuus spellbook (once) then using the Salve graveyard teleport spell. You can also keep doing hourlies and returning to the teak trees this way. If you did not get 16 magic logs from Wintertodt keep going to level 75 instead. You can also go to 75 regardless if you want, it's ~EHP. Remember to swap to the normal spellbook on completion if you chose Arceuus during this step.\nWear armour and take a few food to survive the birds and stay for a long time.\nWhen doing bird runs, do sulliusceps to get 5 sulliuscep caps (note: this can take a long time, long enough to cover multiple bird run timers). Take food, a rake and antipoison. Note: you may be able to get away with fewer than 5 caps and save some time here, but this is a bit of a gamble.\nOptional: train to 75 woodcutting (if you haven't already) and on a future tree run collect magic roots to make an amulet of nature to improve your farming contracts and herb runs on kronos.\n2t Woodcutting Prif with moving shows how to move between trees without messing up the 2t setup. The same strategy works at Soul Wars.\nAlternatively, use 2t oak cutting to train your woodcutting, see e.g. Getting Rats for 2t Oaks, though keeping the rats in cycle while burning the logs may prove difficult.\nAt your own convenience (recommended: right now) chop 300 oak and willow logs and purchase the log basket from the forestry shop.",
+            "expected_gp": 305290,
+            "time_minutes": 180,
+            "completion_conditions": [
+                {
+                    "type": "SKILL",
+                    "id": "WOODCUTTING",
+                    "level": 70
+                },
+                {
+                    "type": "ITEM",
+                    "id": "SULLIUSCEP_CAP",
+                    "amount": 5
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "instructions": "Complete The Grand Tree (Varrock teleport again for the spirit tree), speak with King Narnode Shareen again to start Monkey Madness I. Mine a gold ore in the mine under the Grand Tree for the diary. Leave and right click teleport with Brimstail to load the scrying orb (third scrying orb charge) and start The Eyes of Glouphrie to the step where you need to speak with Hazelmere. If you need magic logs, chop them on the tree in the southeast of the Gnome Stronghold. Return to the tree and take the glider to Gandius, go north and progress Monkey Madness I until you need to return to King Narnode. Use your Kharedst's Memoirs to Arceuus and swap to the Arceuus spellbook. Mine a dense essence block and make it a dark essence block.",
+            "expected_gp": 305290,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "The Grand Tree",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Monkey Madness I",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Eyes of Glouphrie",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "instructions": "Blast Furnace minigame teleport when the brewing is done and complete Forgettable Tale\u2026 Chronicle teleport, run north and give Juliet the cadavaberry potion to progress Romeo & Juliet. Head to Varrock centre and speak with Romeo to complete the quest. Start Garden of Tranquillity. Next speak with the Mage of Zamorak to complete Enter the Abyss.",
+            "expected_gp": 305290,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Forgettable Tale of a Drunken Dwarf",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Romeo & Juliet",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Garden of Tranquillity",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Enter the Abyss",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "instructions": "Draynor Manor teleport, speak with the Wise Old Man to progress Garden of Tranquillity. Wear your ring to cut the charter costs. During the steps below, bring a compost potion and volcanic ash and make sure you have buckets in the leprechaun (can be brought noted) to obtain ultracompost. Leave one bin as supercompost (instead of upgrading to ultra) and collect 15 buckets for My Arm's Big Adventure later, store them with the leprechaun when they're ready. Also bring more compostable items to start a new batch wherever possible.\nSpeak with Elstan (Falador patch), plant marigolds and harralanders.\nBuy 14 watering cans, 4 sacks and two spades from Sarah and spin a strip of cloth from 4 balls of wool at her loom.\nFishing Trawler minigame teleport, charter a ship to Catherby, plant some harralanders, obtain a pet fish from Harry for the diary (requires seaweed and a fishbowl with water) and speak with Dantaera (allotment patch).\nRun back to the Catherby docks, charter a ship to Brimhaven and grab a raw swordfish and raw chicken. Visit the Tower of Life and summon and kill a swordchick, go to Ardougne, get the parrot for Eadgar's Ruse, do Plague City and visit the Flying Horse Inn for the barcrawl along the way (keep the gas mask for Desert Treasure), start Biohazard up to the step where you have the three vials. Have Wizard Cromperty teleport you to the Rune essence mine for the diary.\nHave captain Barnaby take you to Rimmington, get the touch paper and give the right vials to the right people, speak with Captain Tock and continue and complete The Corsair Curse. Return to Rimmington, have captain Barnaby take you to Ardougne. Rebank.\nGrab your iron chainbody, lobster pot, one silk, a wizard's mind bomb, a fly fishing rod, 20 feathers, two soft clay, your cash stack, a cabbage, an axe, secateurs, a trowel, a rake, a plant pot, a watering can, 2 harralander seeds, 6 cabbage seeds, 6 onion seeds, two earth runes, two law runes, a soul rune, a water rune, an unblessed symbol, some food, climbing boots (or boots of lightness) and your rune shortsword. Pickpocket a master farmer for the diary, then run to the farming patch and speak with Kragen. Plant a harralander and the cabbages. Run northwest and find Lollk in the cave for Dwarf Cannon. Run back to Captain Lawgof and continue Dwarf Cannon. Teleport to Fenkenstrain, run to Lyra. Plant the harralander and onions and speak with her to progress the quest.",
+            "expected_gp": 302990,
+            "time_minutes": 120,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Garden of Tranquillity",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Plague City",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Biohazard",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Corsair Curse",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Dwarf Cannon",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Eadgar's Ruse",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "instructions": "Teleport to Draynor Manor, run north to Barbarian Village. Make an unfired bowl on the pottery wheel, fire it for the diary. Make another unfired bowl for Dragon Slayer I. Speak to Checkal the Strongman for Below Ice Mountain and continue to progress that quest. Catch some trout, buy a mithril full helm, steel full helm and two bronze med helmets from the Helmet shop, then enter the Stronghold of Security and complete all four levels, then perform all four emotes for the diary. Optional: also kill some minotaurs, flesh crawlers, catablepon and ankou for the four pieces of the skull sceptre. Run to the Ice Mountain and speak with the Oracle to progress Dragon Slayer I, use secateurs on the white tree to obtain a shoot, put it in your plant pot and water it. Speak with Nulodion to progress Dwarf Cannon. Go downstairs and collect the Dragon Slayer I map piece. Go south, squeeze through the crevice for the diary, speak with Boot to progress Family Crest. Run back outside, go west and complete Below Ice Mountain. Run to the Black Knights' Fortress and continue the quest to the point where you have to return to Sir Amik Varze.",
+            "expected_gp": 312926,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Below Ice Mountain",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Dragon Slayer I",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Dwarf Cannon",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Family Crest",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Black Knights' Fortress",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "instructions": "Run to the Edgeville Monastery, grab a set of monk's robes (you can collect extras if you want). Speak with Brother Jered to bless your unblessed symbol. Speak with Brother Althric to continue Garden of Tranquillity. Continue the quest until you have his rose seeds and your ring of charos (a) again. Grab a pickaxe, a teleport to a bank and an inventory of pure essence and one empty inventory slot (bank everything else). Run to the Mage of Zamorak in the wilderness and mine an iron ore, then enter the abyss and exit through the water rift, craft an inventory of water runes for the diary. Teleport to the bank. Grab climbing boots from the bank if you aren't wearing those already. Use a games necklace teleport to Burthorpe and continue Garden of Tranquillity to get the vine seeds.",
+            "expected_gp": 312296,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Garden of Tranquillity",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "MONKS_ROBE_TOP",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "MONKS_ROBE",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "HOLY_SYMBOL",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "instructions": "Salve teleport, take the fairy ring to AJR and continue Eadgar's Ruse until the step you need to visit Taverley. Visit Elnock Inquisitor once a day to buy 10 impling jars (we most likely only need 27 \u2013 aka 7 free + 2x10 \u2013 or even 17). Take fairy ring CLS to Hazelmere to progress The Eyes of Glouphrie.",
+            "expected_gp": 272962,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Eadgar's Ruse",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Eyes of Glouphrie",
+                    "status": "STARTED"
+                }
+            ]
         }
     ]
 }
