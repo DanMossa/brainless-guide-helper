@@ -56,6 +56,7 @@ public class GuidePanel extends PluginPanel
 
 		setLayout(new BorderLayout());
 		setBackground(ColorScheme.DARK_GRAY_COLOR);
+		setBorder(new EmptyBorder(0, 0, 0, 10));
 	}
 
 	public void rebuild()
@@ -179,7 +180,7 @@ public class GuidePanel extends PluginPanel
 		JPanel panel = new JPanel(new GridBagLayout());
 		panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		panel.setBorder(BorderFactory.createCompoundBorder(
-			BorderFactory.createMatteBorder(0, 0, 1, 0, ColorScheme.MEDIUM_GRAY_COLOR),
+			BorderFactory.createMatteBorder(0, 0, 4, 0, ColorScheme.DARK_GRAY_COLOR),
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 60));
@@ -214,7 +215,7 @@ public class GuidePanel extends PluginPanel
 		JPanel panel = new JPanel(new BorderLayout());
 		panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		panel.setBorder(BorderFactory.createCompoundBorder(
-			BorderFactory.createEmptyBorder(6, 0, 0, 0),
+			BorderFactory.createMatteBorder(10, 0, 0, 0, ColorScheme.DARK_GRAY_COLOR),
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
@@ -252,7 +253,7 @@ public class GuidePanel extends PluginPanel
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		panel.setBorder(BorderFactory.createCompoundBorder(
-			BorderFactory.createEmptyBorder(6, 0, 0, 0),
+				BorderFactory.createMatteBorder(10, 0, 0, 0, ColorScheme.DARK_GRAY_COLOR),
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
@@ -284,7 +285,7 @@ public class GuidePanel extends PluginPanel
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		panel.setBorder(BorderFactory.createCompoundBorder(
-			BorderFactory.createEmptyBorder(6, 0, 0, 0),
+				BorderFactory.createMatteBorder(10, 0, 0, 0, ColorScheme.DARK_GRAY_COLOR),
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
@@ -324,7 +325,7 @@ public class GuidePanel extends PluginPanel
 		JPanel panel = new JPanel(new BorderLayout());
 		panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		panel.setBorder(BorderFactory.createCompoundBorder(
-			BorderFactory.createEmptyBorder(6, 0, 0, 0),
+				BorderFactory.createMatteBorder(10, 0, 0, 0, ColorScheme.DARK_GRAY_COLOR),
 			new EmptyBorder(8, 8, 8, 8)
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
