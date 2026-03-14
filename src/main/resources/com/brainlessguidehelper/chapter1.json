@@ -17,7 +17,7 @@
                 { "type": "QUEST", "id": "Rune Mysteries", "status": "STARTED" },
                 { "type": "SKILL", "id": "FIREMAKING", "level": 15 },
                 { "type": "ITEM", "id": "ASHES", "amount": 5, "location": "BANK" },
-                { "type": "ITEM", "id": "LOGS", "amount": 110, "location": "BANK" }
+                { "type": "ITEM", "id": "LOGS", "amount": 50, "location": "BANK" }
               ]
             },
             {

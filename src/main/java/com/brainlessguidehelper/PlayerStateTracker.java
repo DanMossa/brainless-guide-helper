@@ -36,6 +36,7 @@ public class PlayerStateTracker
 {
 	private final Client client;
 	private final Map<Requirement.RequirementType, RequirementChecker> checkers;
+	private final ItemRequirementChecker itemRequirementChecker;
 
 	// Cached player state
 	private final int[] skillLevels = new int[Skill.values().length];
@@ -53,7 +54,9 @@ public class PlayerStateTracker
 
 		checkers.put(Requirement.RequirementType.QUEST, new QuestRequirementChecker());
 		checkers.put(Requirement.RequirementType.SKILL, new SkillRequirementChecker());
-		checkers.put(Requirement.RequirementType.ITEM, new ItemRequirementChecker());
+		ItemRequirementChecker itemChecker = new ItemRequirementChecker();
+		checkers.put(Requirement.RequirementType.ITEM, itemChecker);
+		this.itemRequirementChecker = itemChecker;
 		checkers.put(Requirement.RequirementType.DIARY, new DiaryRequirementChecker());
 		checkers.put(Requirement.RequirementType.VARBIT, new VarbitRequirementChecker());
 		checkers.put(Requirement.RequirementType.VARP, new VarpRequirementChecker());
@@ -98,6 +101,7 @@ public class PlayerStateTracker
 		else if (containerId == InventoryID.BANK.getId())
 		{
 			bankItems = container.getItems();
+			itemRequirementChecker.updateBankCache(bankItems);
 			log.debug("Bank updated: {} items", bankItems.length);
 		}
 		else if (containerId == InventoryID.EQUIPMENT.getId())
@@ -194,6 +198,7 @@ public class PlayerStateTracker
 		if (bank != null)
 		{
 			bankItems = bank.getItems();
+			itemRequirementChecker.updateBankCache(bankItems);
 		}
 
 		ItemContainer equipment = client.getItemContainer(InventoryID.EQUIPMENT);
