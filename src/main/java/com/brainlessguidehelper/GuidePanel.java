@@ -228,7 +228,7 @@ public class GuidePanel extends PluginPanel
 		stepTitle.setForeground(complete ? COLOR_COMPLETE : Color.WHITE);
 		panel.add(stepTitle, BorderLayout.NORTH);
 
-		String htmlInstructions = "<html><body style='width:200px;'>" + step.getInstructions() + "</body></html>";
+		String htmlInstructions = "<html><body style='width:160px;'>" + step.getInstructions() + "</body></html>";
 		JLabel instructionsLabel = new JLabel(htmlInstructions);
 		instructionsLabel.setFont(FontManager.getRunescapeFont());
 		instructionsLabel.setForeground(complete ? COLOR_COMPLETE : ColorScheme.LIGHT_GRAY_COLOR);
@@ -237,7 +237,7 @@ public class GuidePanel extends PluginPanel
 
 		if (complete)
 		{
-			JLabel completeLabel = new JLabel("✓ Complete");
+			JLabel completeLabel = new JLabel("Complete");
 			completeLabel.setFont(FontManager.getRunescapeSmallFont());
 			completeLabel.setForeground(COLOR_MET);
 			completeLabel.setBorder(new EmptyBorder(4, 0, 0, 0));
@@ -398,7 +398,7 @@ public class GuidePanel extends PluginPanel
 	private String formatRequirement(Requirement req)
 	{
 		boolean met = cachedRequirementStatuses.getOrDefault(req, false);
-		String icon = met ? "✅" : "x";
+		String icon = "" ;// I can't get the check to show met ? "✅" : "x";
 
 		switch (req.getType())
 		{
