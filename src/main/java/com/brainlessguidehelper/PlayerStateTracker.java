@@ -24,6 +24,7 @@ import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.ItemContainerChanged;
 import net.runelite.api.events.StatChanged;
 import net.runelite.api.events.VarbitChanged;
+import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 
 /**
@@ -35,6 +36,7 @@ import net.runelite.client.eventbus.Subscribe;
 public class PlayerStateTracker
 {
 	private final Client client;
+	private final ConfigManager configManager;
 	private final Map<Requirement.RequirementType, RequirementChecker> checkers;
 	private final ItemRequirementChecker itemRequirementChecker;
 
@@ -47,9 +49,10 @@ public class PlayerStateTracker
 	private boolean loggedIn;
 
 	@Inject
-	public PlayerStateTracker(Client client)
+	public PlayerStateTracker(Client client, ConfigManager configManager)
 	{
 		this.client = client;
+		this.configManager = configManager;
 		this.checkers = new EnumMap<>(Requirement.RequirementType.class);
 
 		checkers.put(Requirement.RequirementType.QUEST, new QuestRequirementChecker());
@@ -68,6 +71,7 @@ public class PlayerStateTracker
 		if (event.getGameState() == GameState.LOGGED_IN)
 		{
 			loggedIn = true;
+			itemRequirementChecker.loadBankCache(configManager);
 			refreshSkills();
 			refreshContainers();
 			log.debug("Player state initialized on login");
@@ -102,6 +106,7 @@ public class PlayerStateTracker
 		{
 			bankItems = container.getItems();
 			itemRequirementChecker.updateBankCache(bankItems);
+			itemRequirementChecker.saveBankCache(configManager);
 			log.debug("Bank updated: {} items", bankItems.length);
 		}
 		else if (containerId == InventoryID.EQUIPMENT.getId())

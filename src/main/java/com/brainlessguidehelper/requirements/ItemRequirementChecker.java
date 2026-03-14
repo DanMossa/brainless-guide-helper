@@ -11,6 +11,7 @@ import net.runelite.api.InventoryID;
 import net.runelite.api.Item;
 import net.runelite.api.ItemContainer;
 import net.runelite.api.ItemID;
+import net.runelite.client.config.ConfigManager;
 
 @Slf4j
 public class ItemRequirementChecker implements RequirementChecker
@@ -119,6 +120,72 @@ public class ItemRequirementChecker implements RequirementChecker
 			}
 		}
 		log.debug("Bank cache updated: {} distinct items", bankCache.size());
+	}
+
+	private static final String CONFIG_GROUP = "brainlessguidehelper";
+	private static final String BANK_CACHE_KEY = "bankCache";
+
+	/**
+	 * Persists the current bank cache to RuneLite's config storage.
+	 * Format: "itemId:quantity,itemId:quantity,..."
+	 */
+	public void saveBankCache(ConfigManager configManager)
+	{
+		if (configManager == null)
+		{
+			return;
+		}
+		if (bankCache.isEmpty())
+		{
+			configManager.unsetConfiguration(CONFIG_GROUP, BANK_CACHE_KEY);
+			return;
+		}
+		StringBuilder sb = new StringBuilder();
+		for (Map.Entry<Integer, Integer> entry : bankCache.entrySet())
+		{
+			if (sb.length() > 0)
+			{
+				sb.append(',');
+			}
+			sb.append(entry.getKey()).append(':').append(entry.getValue());
+		}
+		configManager.setConfiguration(CONFIG_GROUP, BANK_CACHE_KEY, sb.toString());
+		log.debug("Bank cache saved: {} distinct items", bankCache.size());
+	}
+
+	/**
+	 * Loads the bank cache from RuneLite's config storage.
+	 */
+	public void loadBankCache(ConfigManager configManager)
+	{
+		if (configManager == null)
+		{
+			return;
+		}
+		String data = configManager.getConfiguration(CONFIG_GROUP, BANK_CACHE_KEY);
+		if (data == null || data.isEmpty())
+		{
+			return;
+		}
+		bankCache.clear();
+		for (String entry : data.split(","))
+		{
+			String[] parts = entry.split(":");
+			if (parts.length == 2)
+			{
+				try
+				{
+					int itemId = Integer.parseInt(parts[0]);
+					int quantity = Integer.parseInt(parts[1]);
+					bankCache.put(itemId, quantity);
+				}
+				catch (NumberFormatException e)
+				{
+					log.warn("Invalid bank cache entry: {}", entry);
+				}
+			}
+		}
+		log.debug("Bank cache loaded: {} distinct items", bankCache.size());
 	}
 
 	private int countInBank(Client client, int itemId)
