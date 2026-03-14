@@ -492,6 +492,209 @@
                     "status": "STARTED"
                 }
             ]
+        },
+        {
+            "id": 18,
+            "instructions": "Fenkenstrain teleport, harvest your harralanders and plant new ones and speak with Lyra to progress Garden of Tranquility. Fishing Trawler minigame teleport. Bank, grab combat gear (including mithril armour, your gnome amulet and an antidragon shield), an axe, a tinderbox, a knife, money, pickaxe optional, runes optional and charter a ship to Brimhaven. Go south to the general store near Tai Bwo Wannai village, buy a machete, a few bread and a few antipoisons. Using the snake boxing method (https://oldschool.runescape.wiki/w/Gout_tuber/Strategies), chop light jungle to get a gout tuber for the medium diary, when you get your first sticks repair the fence and speak to Murcaily then resume chopping. If you get a gout tuber before you reached 100% favour kill jungle spiders (north of the calquat farming patch) to get to 100%. Also prepare and cook a spider on a stick along the way for the diary. If you are taking too much damage, buy more bread from the general store.\nWhen done, go to Ardougne and bank, grabbing a pickax, harralander seeds, Draynor manor teleport runes, a dramen staff and your farming tools if needed. Head to the Witchhaven dungeon and mine two 'perfect' gold ores for Family Crest. Head back out and harvest your harralanders and plant new ones and speak with Kragen to progress Garden of Tranquillity. Lastly Draynor Manor teleport, run to the Falador allotment patch, harvest your harralanders and plant new ones and speak with Elstan to progress Garden of Tranquillity. Run to Taverley and collect the dirty robes for Eadgar's Ruse. Salve teleport, fairy ring AJR, continue Eadgar's Ruse. Boost your herblore using a botanical pie to make the truth serum. Make sure to collect 3 goutweed. Home teleport, pray at the Dark Altar to return to the normal spellbook. Teleport to Varrock, plant all the seeds in the garden and continue Garden of Tranquillity. Go to southeast Varrock and continue Biohazard.",
+            "expected_gp": 272296,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Garden of Tranquillity",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Family Crest",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Eadgar's Ruse",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Biohazard",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "GOUT_TUBER",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "instructions": "Blast furnace minigame teleport, make three inventories of steel bars and an inventory of iron bars. Alternatively you can enchant a ruby ring from a bird run), buying the ores in the shop if needed. Smelt 50 silver ore at the Blast Furnace, buying ores if necessary. If you have more silver ore, smelt it here. Using your dwarven stouts make 108 gold bars, taking you (well) past level 40 smithing. Make sure to use the ring of charos(a) when paying the foreman. Leave 27 gold bars in the dispenser - you will only take these out at level 99 smithing. Having bars in there speeds up the smelting.",
+            "expected_gp": 250142,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "SKILL",
+                    "id": "SMITHING",
+                    "level": 40
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "instructions": "Teleport to Lumbridge, continue Garden of Tranquillity and smelt the two 'perfect' gold ores into perfect jewelry (BE CAREFUL NOT TO MAKE TWO RINGS/NECKLACES). Make mushroom pies (1-4 pies are recommended, depending on how many uncut gems you got from wintertodt. If you went for the minimum amount of wintertodt you will need up to 4, while 1 pie is enough if you went to level 97+) on the Lumbridge range. Teleport to Falador, continue Garden of Tranquillity. Make jewelry (40 rings of dueling, 45 digsite pendants, 10 games necklaces, 8 bracelets of clay, 2 sapphire amulets, turn one into an amulet of magic, 1 ruby amulet with the pie boost and turn it into an amulet of strength, 1 binding necklace).\nYou should have some spare sapphire and emerald rings by now from your bird runs. Enchant those too.\nThe amulet of strength will be the BiS for a long, long time (until Chapter 3, when you upgrade it to an amulet of torture).\nKeep doing poor man's harralander herb runs (skip forward to step 93 to check a more detailed explanation of these) (make ~10 compost potions and ~120 energy potions to get to 16,224 herblore xp, almost level 32. The potions will be useful for turning entire compost bins into supercompost). Make sure to leave one harralander in the bank for Heroes' Quest. You will buy water-filled vials a few steps down in the guide.",
+            "expected_gp": 250142,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Garden of Tranquillity",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "instructions": "Complete the Garden of Tranquillity (the statue teleports you to Varrock). Shoo your cat/kitten and get a new one from Gertrude (can teleport with chronicle), pick the colour for the diary. Run to the spirit tree and finish The Eyes of Glouphrie and enchant the crystal saw seed at the bowl. Grab a spare bucket of sap for Icthlarin's Little Helper later.\nWhenever you have the chance, plant teak trees in the Fossil Island hardwood tree patches, in particular the two westernmost ones.",
+            "expected_gp": 250042,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Garden of Tranquillity",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Eyes of Glouphrie",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "instructions": "Plant willow saplings in at least two places (three for insurance is better. Varrock, Falador and Lumbridge are recommended). Pick a white tree fruit from the white tree for the diary. Games necklace teleport to Burthorpe, visit the Rogues Den and buy 1200 knives (15 bronze, 10 iron, 5 steel) per world from Martin Thwait (optional but not recommended: you can buy about 3x as many so you don't have to pick them up later, but it's more world hopping). Exit the Rogues Den and run south and complete Eadgar's Ruse. Buy 25 water-filled vial packs.\nIf you collect(ed) one limpwurt root at any point you can now finish the Kourend & Kebos easy diary. Do so at your own convenience and put the lamp on herblore.",
+            "expected_gp": 239208,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Eadgar's Ruse",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "instructions": "Dueling ring to the duel arena, give the pieces of perfect jewellery to Avan for Family Crest. Dueling ring to Clan Wars, go through Soul Wars to Edgeville, enter the Edgeville dungeon and get a slayer task from Vannaka (for the diary), cross the obstacle pipe into the sewers (for the diary) and collect ~7 red spider's eggs (for diary steps, restore potions for Desert Treasure and a guthix balance potion against vampyres). Return to Edgeville bank, grab 50gp, a pickaxe, axe, a ring of dueling and fill your inventory with pure essence (you only need 1 really, but free xp). Make a waka canoe (but don't use it), then run into the wilderness and buy a team cape from Richard and equip it for the diary, get sent to the Abyss by the Mage of Zamorak. Exit through the earth rift and craft an inventory of earth runes for the diary.",
+            "expected_gp": 239158,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Family Crest",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "instructions": "Equip your best ranging gear, a ring of dueling, and your knives. Grab your lizardkickers and food. Go to the Tower of Life (Fishing Trawler minigame teleport) and kill imps outside there to collect all required beads for Imp Catcher. After killing the imps use the fairy ring to Zanaris to buy jars from Elnock if you haven't yet, then fairy ring DIS to start and complete Imp Catcher. Minigame teleport to Shades of Mort'ton. Kill Loar Shades until at least 51,012 ranged xp (level 43). You can safespot them on obstacles in the village itself. Make sure to pick up your knives to throw them multiple times. Prioritise using the steel knives first, then iron, then bronze.",
+            "expected_gp": 239158,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Imp Catcher",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "SKILL",
+                    "id": "RANGED",
+                    "level": 43
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "instructions": "Check the willow trees when they've grown (probably in the middle of this step). Kill green dragons with water bolt for 43 prayer. Do not use your last 100 chaos runes - if your runes are depleting, swap over to water strike instead. This requires killing 70 green dragons, games necklace to Corporeal Beast then run east, bank the hides with a looting bag. It's probably smart to finish 80 dragons instead in case of bad RNG at the Wilderness altar. Make sure to bank at least one spare set of dragon bones. For using the bones up, run from Ferox Enclave). After this step, the game is safe. :)\nHCIM: There are three options for HCIM, and they are all bad:\nDo the above step but kill more dragons, using the ectofuntus to turn them in. Ghosts Ahoy is only in Ch2St22, so either you do this without an ectophial (fairy ring ALQ on Arceuus book, dueling rings to rebank), or you reroute to complete the quest early. There are no significant requirement for doing the quest early.\nInstead of killing green dragons, you can safespot blue dragons in the Isle of Souls. They are way tankier and this takes considerably more time, but it means you don't have to go into the wilderness. Taverley Dungeon is not viable right now with 51 agility.\nVarlamore mining: mining calcified rocks gives blessed bone shards, which can be turned in at the liberation bowl with blessed wine (made from regular wine) starting at level 30 prayer - which you have. The downside is that this method scales significantly with mining level, so it's lousy right now (but it is completely safe). Later, when going for 70 prayer, this is a reasonable alternative for HCIM to wildy green dragons, though it is still recommended to train mining more as much as possible before doing this method.",
+            "expected_gp": 230380,
+            "time_minutes": 300,
+            "completion_conditions": [
+                {
+                    "type": "SKILL",
+                    "id": "PRAYER",
+                    "level": 43
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "instructions": "Collect 12 willow branches (6 per tree, 5 minutes to grow, only starts growing after checking health). If you had 3 trees grown, collect 18 instead. Buy 26 garden pies from Romily Weaklax in the Cooks' Guild in Varrock along the way (or chronicle teleport to get there). Optional: buy a second inventory, they are useful. Do Enlightened Journey. If you only collected 12 branches earlier, collect 6 more now. Digsite teleport to the digsite, do A Soul's Bane and re-enter the dungeon after completing it.\nNote: After Ch2St72 you can instead buy these at Yarnio's Baked Goods in Cam Torum.",
+            "expected_gp": 230880,
+            "time_minutes": 180,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Enlightened Journey",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "A Soul's Bane",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "instructions": "Do arteglass to make 1580 unpowered orbs: Kharedst's teleport to Piscarilius, do arteglass (Ferox every inventory to restore run energy, Shayzien teleport on the Kharedst's to restore Kharedst's charges) to make unpowered orbs. This also completes a diary task.\nOptional but not recommended: bankstand it instead.\nIf you are not yet level 78 thieving, consider staying here for level 78 (pickpocket a dorgesh-kaan rich chest). Alternatively, collect a temporary boost (for example, Sq'irk juice) at your own convenience.\nHere is the best arteglass guide Stealing Artefacts + Multiskill Guide 2023/2024, with a low level alternative here Early game Arteglass Thieving & Crafting",
+            "expected_gp": 230880,
+            "time_minutes": 120,
+            "completion_conditions": [
+                {
+                    "type": "ITEM",
+                    "id": "UNPOWERED_ORB",
+                    "amount": 1580
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "instructions": "Swap to Arceuus spellbook (games necklace to wintertodt into minecart). Teleport to the Arceuus Library, run east and progress Bear Your Soul to get the Damaged soul bearer. Do My Arm's Big Adventure up to but not including the final fight. When in Ardougne after the Tai Bwo Wannai section, complete Biohazard (bring a lockpick), run north and enter the Combat Training Camp for the diary, return to king Lathas and start Underground Pass and steal from the chest for the hard diary. Do the entire Watchtower quest, using fairy ring CIQ to speed up the quest when possible (bring ranging gear for the Gorad fight). While in Yanille start Hand in the Sand at Bert, visit the Dragon Inn for the barcrawl and Hand in the Sand, check Aleck's Hunter Emporium for the diary, buy a butterfly net, 5 butterfly jars, a noose wand, teasing stick and a rabbit snare, continue Hand in the Sand until you need to visit Sandy in Brimhaven. Collect a cave nightshade for the diary. When Watchtower is completed, home teleport, swap to the normal spellbook, use a Wizard's mind bomb to boost for Trollheim teleport. Complete My Arm's Big Adventure.\nOptional alternative, not recommended: instead stay on Arceuus spellbook and melee the Giant Roc fight.\nAfter this quest you should have level 40 herblore, including the potions made from e.g. harralanders.\nFrom here on out it is worth growing cats at your own convenience whenever on the Arceuus spellbook, using the West Ardougne teleport to hand them in for death runes. Karambwanji (the bait) are a popular food for growing cats since it stacks, fish some at your convenience.\nOn your first cat hand-in, bring a rune shortsword and kill zombies for Rag and Bone Man II, collect the Ardougne Easy Diary reward before handing in the cat and put the lamp on Herblore.",
+            "expected_gp": 235737,
+            "time_minutes": 120,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Bear Your Soul",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Biohazard",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Underground Pass",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Watchtower",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Hand in the Sand",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "My Arm's Big Adventure",
+                    "status": "COMPLETED"
+                }
+            ]
         }
     ]
 }
