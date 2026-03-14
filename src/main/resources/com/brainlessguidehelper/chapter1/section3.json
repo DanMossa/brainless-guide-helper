@@ -1,0 +1,92 @@
+{
+    "id": "1.3",
+    "title": "Unlocking bird runs",
+    "steps": [
+        {
+            "id": 1,
+            "instructions": "Soul Wars teleport to get to Edgeville, bank your money. Grab a knife and go to the Mage Arena. Buy 1250 nature runes, 700 law runes, 500 chaos runes (100 nats 50 laws 50 chaos per world, stop with chaos after 10 worlds) and all cosmics per world while you're at it (best case: 20/world with 18 hops).",
+            "expected_gp": 777349,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "ITEM",
+                    "id": "NATURE_RUNE",
+                    "amount": 1250
+                },
+                {
+                    "type": "ITEM",
+                    "id": "LAW_RUNE",
+                    "amount": 700
+                },
+                {
+                    "type": "ITEM",
+                    "id": "CHAOS_RUNE",
+                    "amount": 500
+                },
+                {
+                    "type": "ITEM",
+                    "id": "COSMIC_RUNE",
+                    "amount": 400
+                },
+                {
+                    "type": "ITEM",
+                    "id": "KNIFE",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "instructions": "Grab a fly fishing rod, 10 feathers and 10gp. Home teleport to Lumbridge, catch a salmon for the diary, run to the Mage Training Arena. Grab 200 nature runes, 400 water runes, a staff of earth and six food (make sure to have at least 20 empty inventory slots). Collect 211 Graveyard points. An easy way is to grab and drop 4 bones once, then after that repeatedly grab a set of 8 bones (20 bananas) and deposit all, eating your food and later your bananas as needed while moving to stay alive. Go to the bank, grab 1050 nature runes, 500 law runes, 400 cosmic runes, a staff of air, a staff of earth, a staff of fire and 10 wizard mind bombs. Collect 211 telekinetic points, then using low alchemy collect 311 alchemist points (only alch the 30gp items, even if others are free). Optionally use the wizard mind bombs at levels 52-54 to gain access to high alchemy earlier. Collect 2165 enchantment points (lvl-4 enchant in the corner, using a wizard mind bomb as necessary, just drop the shapes after). Buy a mud rune, 10 mist runes, and unlock bones to peaches (this requires boosting to 60 magic with a Wizard's Mind Bomb). At some point cast Bones to Peaches in the Al Kharid palace for the diary. Runes lost at MTA: 1140 nats, 473 laws, 382 cosmics, 272 waters. Runes gained at MTA: 66 earths/deaths/bloods.",
+            "expected_gp": 777339,
+            "time_minutes": 180,
+            "completion_conditions": [
+                {
+                    "type": "ITEM",
+                    "id": "MUD_RUNE",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "MIST_RUNE",
+                    "amount": 10
+                },
+                {
+                    "type": "ITEM",
+                    "id": "NATURE_RUNE",
+                    "amount": 510
+                },
+                {
+                    "type": "ITEM",
+                    "id": "LAW_RUNE",
+                    "amount": 227
+                },
+                {
+                    "type": "ITEM",
+                    "id": "COSMIC_RUNE",
+                    "amount": 18
+                },
+                {
+                    "type": "ITEM",
+                    "id": "WATER_RUNE",
+                    "amount": 220
+                },
+                {
+                    "type": "ITEM",
+                    "id": "EARTH_RUNE",
+                    "amount": 66
+                },
+                {
+                    "type": "ITEM",
+                    "id": "DEATH_RUNE",
+                    "amount": 66
+                },
+                {
+                    "type": "ITEM",
+                    "id": "BLOOD_RUNE",
+                    "amount": 66
+                }
+            ]
+        }
+    ]
+}
