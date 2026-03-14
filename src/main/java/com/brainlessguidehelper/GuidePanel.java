@@ -236,7 +236,7 @@ public class GuidePanel extends PluginPanel
 
 		if (complete)
 		{
-			JLabel completeLabel = new JLabel("\u2713 Complete");
+			JLabel completeLabel = new JLabel("✓ Complete");
 			completeLabel.setFont(FontManager.getRunescapeSmallFont());
 			completeLabel.setForeground(COLOR_MET);
 			completeLabel.setBorder(new EmptyBorder(4, 0, 0, 0));
@@ -361,8 +361,8 @@ public class GuidePanel extends PluginPanel
 		Step nextStep = findAdjacentStep(guide, currentStep, 1);
 
 		gbc.gridx = 0;
-		gbc.weightx = 1;
-		JButton prevButton = new JButton("\u25C0 Prev");
+		gbc.weightx = 0;
+		JButton prevButton = new JButton("<");
 		prevButton.setFont(FontManager.getRunescapeSmallFont());
 		prevButton.setEnabled(prevStep != null);
 		prevButton.addActionListener(e ->
@@ -380,8 +380,8 @@ public class GuidePanel extends PluginPanel
 		panel.add(currentButton, gbc);
 
 		gbc.gridx = 2;
-		gbc.weightx = 1;
-		JButton nextButton = new JButton("Next \u25B6");
+		gbc.weightx = 0;
+		JButton nextButton = new JButton(">");
 		nextButton.setFont(FontManager.getRunescapeSmallFont());
 		nextButton.setEnabled(nextStep != null);
 		nextButton.addActionListener(e ->
@@ -397,7 +397,7 @@ public class GuidePanel extends PluginPanel
 	private String formatRequirement(Requirement req)
 	{
 		boolean met = cachedRequirementStatuses.getOrDefault(req, false);
-		String icon = met ? "\u2713" : "\u2717";
+		String icon = met ? "✅" : "x";
 
 		switch (req.getType())
 		{
