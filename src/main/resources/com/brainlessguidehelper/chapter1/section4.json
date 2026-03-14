@@ -1,0 +1,143 @@
+{
+    "id": "1.4",
+    "title": "62 farming, Desert Treasure, earth battlestaves",
+    "steps": [
+        {
+            "id": 1,
+            "instructions": "Bank at Ferox, do the entire Death Plateau and Troll Stronghold quests (use minigame teleports whenever possible, or your games necklace when it is not). If you get the troll bone for Rag and Bone Man II at any point during the troll quests, keep it. Buy 5 extra pairs of climbing boots. Make sure to free Eadgar and unlock the secret south entrance to the stronghold.",
+            "expected_gp": 445386,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Death Plateau",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Troll Stronghold",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "CLIMBING_BOOTS",
+                    "amount": 5
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "instructions": "Teleport to Falador. Smelt the conductor rod for Creature of Fenkenstrain, the demonic sigil for Shadow of the Storm and make an unstrung symbol (holy mould). String it. If you are not level 27 herblore yet, make serum 207's, compost potions and energy potions in the bank using your wintertodt herbs. Grab a botanical pie and run north. If you haven't spoken with 5 farmers yet for Fairytale I speak to Alain. Boosting your herblore, speak with Sanfew to start Eadgar's Ruse. Head to the Goblin Village and progress Holy Grail and The Lost Tribe.",
+            "expected_gp": 445386,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "ITEM",
+                    "id": "CONDUCTOR",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "DEMONIC_SIGIL",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "HOLY_SYMBOL",
+                    "amount": 1
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Eadgar's Ruse",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Holy Grail",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Lost Tribe",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "instructions": "Grab your scrying orb and a pickaxe. Use your necklace of passage to teleport to the Wizards' Tower. Have Wizard Sedridor send you to the rune essence mine (second scrying orb charge) and leave again. Run to Draynor and continue Fairytale I (and enter Zanaris) up to the step where you need to visit Zandar Horfyre. Teleport to Lumbridge and finish The Lost Tribe. Give Mistag the brooch for a mining helmet. Start Death to the Dorgeshuun (also Mistag), only the very very first step.",
+            "expected_gp": 445386,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Fairytale I - Growing Pains",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Lost Tribe",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "MINING_HELMET",
+                    "amount": 1
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Death to the Dorgeshuun",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "instructions": "Teleport to Falador. Get a haircut from the hairdresser and fill a bucket at the pump for the diary. Continue Fairytale I (by climbing over the western Falador wall) until you have the list of three items needed to make the magic secateurs, stop by the crafting guild along the way and mine a gold ore for the diary and turn two cowhides into soft leather and one into a hard leather (so three hides total). Complete Melzar's Maze for the map piece to progress Dragon Slayer I. Collect the three Fairytale items. Most items are not too difficult to obtain, see below for some suggestions for the harder ones. Use the Shades of Mort'ton minigame teleport to get to the Nature Grotto, killing a snail for thin snail meat and crafting its shell into a snelm along the way, and make the magic secateurs.\nClean avantoe/irit leaf: have Zahur in Nardah clean their grimy equivalent that you got from Wintertodt, or do Sorceress' Garden minigame for them.\nClean snapdragon: Brimhaven agility arena to buy one for 10 tickets.\nNature talisman: kill abyssal leeches in the abyss. Probably the most difficult item. At least you can pick up the RC pouches that they drop as well, which will be useful later.\nWhite berries: the wilderness Lava Isle spawn, or cave crawlers/chaos druid warriors.",
+            "expected_gp": 445381,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Fairytale I - Growing Pains",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Dragon Slayer I",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "MAGIC_SECATEURS",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "THIN_SNAIL_MEAT",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "SNELM",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "SOFT_LEATHER",
+                    "amount": 2
+                },
+                {
+                    "type": "ITEM",
+                    "id": "HARD_LEATHER",
+                    "amount": 1
+                },
+                {
+                    "type": "ITEM",
+                    "id": "GOLD_ORE",
+                    "amount": 1
+                }
+            ]
+        }
+    ]
+}
