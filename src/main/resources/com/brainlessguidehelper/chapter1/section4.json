@@ -245,6 +245,67 @@
                     "amount": 1
                 }
             ]
+        },
+        {
+            "id": 9,
+            "instructions": "Zeah:\nWhenever you are about to take a minecart or go to an area where you need one, consider using a games necklace to teleport to Wintertodt instead. This has access to a bank and the minecart system. Take the minecart to Shayzien. Buy 20 Lizardkickers in the Cloak and Stagger and bank them. Start the Tale of the Righteous. Run on to Lovakengj, sniping a lizardman kill along the way (just tag one that's in combat, be careful with poison and health). Speak with Lady Vulvana Lovakengj to start the Forsaken Tower. Mine and bank one sulphur.\nRun to Arceuus, speak with Ganala and find The Envoy To Varlamore for The Depths of Despair and read it and find Soul Journey along the way. In there, hand in a book for the diary (XP on magic). Speak with Mori to start The Ascent of Arceuus. Run south, pick the lock on the chest in Councillor Hughes' home to find the letter for The Queen of Thieves. Head to the castle, speak with Councillor Andrews to progress Ascent of Arceuus, pray at the altar for the diary. Grab your willow shortbow with steel arrows, wind strikes, a rune shortsword, some food, a games necklace and your coin stack.\nRun to Mori to progress Ascent of Arceuus, buy 200 soul runes at Regath (50 per world). Run the Arceuus library.\nProgress Ascent of Arceuus and Tale of the Righteous, swap to the Arceuus spellbook, progress the Bear Your Soul miniquest.\nUse a games necklace to teleport to Wintertodt and progress the Forsaken Tower. Grab a rune pickaxe, fly fishing rod and 10 feathers, keep your quest items on you. Grab runes for Arceuus teleports. Battlefront teleport, progress Ascent of Arceuus until after the Mount Karuulm Step (mine an iron ore in the Mount Karuulm mine while you're up there and buy a steel spear from Leke quo Keran. Also fish a trout from the River Molch for the diary and do Getting Ahead while you are near the farming guild), progress the Forsaken Tower, games necklace Wintertodt teleport and progress the Forsaken Tower. Getting Ahead items are around the area. Teleport to Fenkenstrain and complete Creature of Fenkenstrain.\nHome teleport to Dark Altar to progress Ascent of Arceuus, swap back to the normal spellbook, head northeast and take the boulder leap shortcut for the diary. Bank at Ferox, grab 15 compostable items. House teleport, fill the compost bin. Head south and kill a sand crab (e.g. with magic) for the diary in the crabclaw cavern and complete Depths of Despair. Run north to Piscarilius, repair a crane for the diary and complete the Queen of Thieves. Take the mine cart to Lovakengj, complete the Forsaken Tower.\nRun south, bank in the Shayzien Encampment and grab food and an antipoison (along with the quest items you were carrying). Progress Tale of the Righteous by speaking with Lord Shayzien until he gives permission for the Mount Quidamortem expedition. Go to Mount Quidamortem and resume Tale of the Righteous to the step where you have spoken to Duffy and Gnosi near the unstable altar. Make sure to also unlock the quick transportation by speaking with the Mountain Guide.\nHop worlds to leave the cave (or teleport to Wintertodt). Take the cart back to Shayzien, complete Tale of the Righteous. Run west to Lake Molch and take the boat onto Lake Molch Island. If you have 35 hunter catch a bluegill for the diary. Continue the Garden of Death quest at Lake Molch Island and then Xeric's Shrine. Kharedst's memoirs teleport to the Graveyard of Heroes (Shayzien), run southwest and complete the Garden of Death at the Ruins of Morra. If you are not cut-eating all of your barbarian fishing, Kharedst's memoirs teleport to Hosidius, spin your ten linen yarn into five bolts of linen, then run to the mess hall and train to level 70 cooking (if you are cut-eating the whole way you will get this level later passively). Either way, next enter the woodcutting guild and buy an iron, mithril and a rune axe. Run north and complete Ascent of Arceuus.\nIf you obtained a dragon axe from wintertodt you don't need the rune axe (but you will need the other two).",
+            "expected_gp": 305515,
+            "time_minutes": 480,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Tale of the Righteous",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Forsaken Tower",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Depths of Despair",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Ascent of Arceuus",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Queen of Thieves",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Garden of Death",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Creature of Fenkenstrain",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Getting Ahead",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "instructions": "Blast Furnace minigame teleport, harvest the kelda hops, start the brewing/fermenting process. Teleport to Camelot and complete Holy Grail.",
+            "expected_gp": 305290,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Holy Grail",
+                    "status": "COMPLETED"
+                }
+            ]
         }
     ]
 }
