@@ -67,7 +67,6 @@ public class BrainlessGuideHelperPlugin extends Plugin
 
 		clientToolbar.addNavigation(navigationButton);
 
-		guidePanel.updateDataOnClientThread();
 		guidePanel.rebuild();
 		log.debug("Brainless Guide Helper started!");
 	}
