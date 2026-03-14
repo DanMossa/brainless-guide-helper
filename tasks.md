@@ -31,13 +31,13 @@
 - [x] Determine the "current step" based on progress.
 
 ## Phase 4: User Interface
-- [ ] Create a `GuidePanel` (extends `PluginPanel`) to display the guide.
-    - [ ] Display current Chapter/Section.
-    - [ ] Display current step instructions and progress.
-    - [ ] Display requirements and their status (Met/Not Met).
-    - [ ] Render step options as radio buttons or a dropdown.
-    - [ ] Checkbox for manual completion.
-- [ ] Add navigation to view previous/next steps or browse the full guide.
+- [x] Create a `GuidePanel` (extends `PluginPanel`) to display the guide.
+    - [x] Display current Chapter/Section.
+    - [x] Display current step instructions and progress.
+    - [x] Display requirements and their status (Met/Not Met).
+    - [x] Render step options as radio buttons or a dropdown.
+    - [x] Checkbox for manual completion.
+- [x] Add navigation to view previous/next steps or browse the full guide.
 - [ ] Implement guide overlays (optional):
     - Highlight items in bank/inventory needed for the step.
     - Arrow pointers to NPCs/Objects mentioned in the step (like Quest Helper).
