@@ -229,7 +229,7 @@ public class GuidePanel extends PluginPanel
 
 		String htmlInstructions = "<html><body style='width:200px;'>" + step.getInstructions() + "</body></html>";
 		JLabel instructionsLabel = new JLabel(htmlInstructions);
-		instructionsLabel.setFont(FontManager.getRunescapeSmallFont());
+		instructionsLabel.setFont(FontManager.getRunescapeFont());
 		instructionsLabel.setForeground(complete ? COLOR_COMPLETE : ColorScheme.LIGHT_GRAY_COLOR);
 		instructionsLabel.setBorder(new EmptyBorder(4, 0, 0, 0));
 		panel.add(instructionsLabel, BorderLayout.CENTER);
