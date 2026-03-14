@@ -138,6 +138,113 @@
                     "amount": 1
                 }
             ]
+        },
+        {
+            "id": 5,
+            "instructions": "Complete The Shadow of the Storm (you can flinch the demon with a rune shortsword just like during Holy Grail, and deal the last hit with darklight. Just don't run away when you deal the last hit! Oziris recommends the northwest torch https://i.imgur.com/kvn6Mf5.png), put the xp on ranged. After the quest is done bank at Ferox, POH teleport and run north with 15 compostable items and a noted stack of buckets, volcanic ash and a compost potion to collect optional ultracompost and make a new batch (unnote the buckets by storing them with the leprechaun).",
+            "expected_gp": 445381,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Shadow of the Storm",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "instructions": "You should be at least level 11 hunter by now from bird runs (you didn't forget, did you?). Teleport to Lumbridge, collect a few anti-dragon shields from the Duke. Enter Zanaris and complete Fairytale I (make sure to take the low level agility shortcut to the cosmic altar for the diary) (Oziris recommends this safespot for flinching: https://i.imgur.com/2Ejgx0h.png). Leave Zanaris and run to Draynor, start Fairytale II (bank shields, withdraw the other items). Free Prince Ali with your key, do A Porcine of Interest, buy a mirror shield, rock hammer, two facemasks, earmuffs, nose peg, spiny helmet, unlit bug lantern, insulated boots, boots of stone, bag of salt, slayer gloves, 30 ice coolers and as many enchanted gems as you can carry, grab 10 grain. Return to Martin the Master Farmer (rebank), continue Fairytale II until you have access to fairy rings. Go to ring CIR (diary step), ALS (McGrubor's Wood, diary step, run out and plant jute seeds for the diary, return to the fairy ring), BIS (Ardougne zoo, diary step), AIR (diary step), DIS (diary step), AJP (Varlamore) and do The Ribbiting Tale of a Lily Pad Labour Dispute in full and include this fairy ring in future hardwood tree farming runs, also grab a sweetcorn for Recipe for Disaster, optional: also do Twilight's Promise here, this requires some combat, fairy ring BJR (Fisher Realm) to continue Holy Grail (grab the holy grail, don't blow the whistle), fairy ring to Hazelmere for The Grand Tree (CLS), fairy ring BLS and start The Garden of Death, exploring the cave below until you have enough words to be sent to Lake Molch, fairy ring DKS to start Olaf's Quest, kill 5 rock crabs for the diary, catch a cerulean twitch for the diary.",
+            "expected_gp": 444615,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Fairytale I - Growing Pains",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Fairytale II - Cure a Queen",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Prince Ali Rescue",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "A Porcine of Interest",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Grand Tree",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Garden of Death",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Olaf's Quest",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "instructions": "If you have not collected the item for Forgettable Tale\u2026 by now, go get it. Continue Forgettable Tale\u2026, get the third kelda seed from the Rowdy Dwarf in the Laughing Miner (also pick up a beer to get an empty glass) and the fourth from Gauss, then continue the quest until you have planted your kelda hops. Bank and grab items for the next steps. Return to fairy ring AJR and complete Mountain Daughter. Take the secret entrance to the Troll Stronghold (speak with Burntmeat to save walking) and continue Eadgar's Ruse to the step where you have to collect the parrot. Start Troll Romance up to the step where you need to collect the flower (after you have the sled).",
+            "expected_gp": 444615,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Forgettable Tale of a Drunken Dwarf",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Mountain Daughter",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Eadgar's Ruse",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Troll Romance",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "instructions": "Chronicle teleport and harvest your barley, cook it along the way in the Tree Gnome Stronghold steps below. Run south and craft a coif in the Lumbridge cow pen for the diary. Continue The Grand Tree (Varrock teleport for spirit tree), then go up the stairs and buy 4 inventories of food from the Gnome Waiter (each inventory consists of 3x Premade veg batta, 3x Premade w'm batta, 3x Premade t'd batta, 3x Premade fr't batta, 3x Premade c+t batta, 3x Premade worm hole, 3x Premade ttl, 3x Premade veg ball, 3x Premade choc bomb). At the Karamja Shipyard step of this quest charter to Port Sarim, speak with Veos and go to Kourend, then take the ship to Land's End. You should have at least 15 hunter by now from bird runs, level 35+ will help speed up the Kourend diary.\nThe gnome food is 2t and combo food, meaning it is better than most other food available at this level (and only outclassed by karambwans later), and you can also combo-eat it if you want.\nThe chocolate bomb and tangled toad's legs (\"premade choc bomb\" and \"premade ttl\") heal 15 each, the worm hole and vegetable ball heal 12 each, and all the battas heal 11 each.\nThere is a myth about the tangled toad's legs being slower to restore your health - this is not correct.",
+            "expected_gp": 428215,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "The Grand Tree",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "COIF",
+                    "amount": 1
+                }
+            ]
         }
     ]
 }

@@ -403,6 +403,149 @@
                     "amount": 3
                 }
             ]
+        },
+        {
+            "id": 10,
+            "instructions": "House teleport, fill a bucket at the well, start The Fremennik Trials with Manni, start working on getting his vote, continue with Olaf and get sent to collect a lyre - this is the wiki order, not the RuneLite plugin order. Regrettably these are not the same. Continue questing for Olaf's vote up to the step where you cut a branch from the swaying tree (YOU DO NOT NEED 40 CRAFTING). Chop some oak logs and burn them for the diary and kill the unicorn for the unicorn bone and horn as you pass it, start and continue Mountain Daughter until you have spoken to Svidi, house teleport and speak to Askeladden (Fremmy Trials) and Brundt (Mountain Daughter), get the golden fleece (Fremmy Trials) and get half a rock (Mountain Daughter), continue Mountain Daughter until you need to get the white pearl seed, run back out of the camp and do The Giant Dwarf (right-click open the Stonemason's shop at the start for the diary) to the step where you need to visit Thurgo. Steal from the crafting or baker's stall, and then from the gem stall, for the diary. While in Keldagrim, buy a rune pickaxe from the store in the eastern section.\nOptional: also buy an adamant pickaxe if you are not planning on tick manipulating your sandstone mining, or if you want to f2p 2t Shooting Stars.",
+            "expected_gp": 675321,
+            "time_minutes": 120,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "The Fremennik Trials",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Mountain Daughter",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "The Giant Dwarf",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "RUNE_PICKAXE",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "instructions": "Teleport to Falador and pay Emily in the Rising Sun Inn to progress RFD/Dwarf, continue the barcrawl and speak to Burntof for Below Ice Mountain while you're here. Pickpocket a guard for the diary. Move your POH to Taverley at the estate agent. Buy 8 woad leaves from Wyson the gardener (offer to pay 20gp to get two at a time). You should have at least 3,170 Herblore experience by now (level 17) \u2013 if not bankstand some herblore with Wintertodt herbs. Complete a lap of the Falador rooftop course for the diary. Make sure you are wearing leather gloves and collect all items in advance for the next steps, and that you have at least 12 empty inventory spaces.",
+            "expected_gp": 670171,
+            "time_minutes": 30,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Recipe for Disaster/Dwarf",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "SKILL",
+                    "id": "HERBLORE",
+                    "level": 17
+                },
+                {
+                    "type": "ITEM",
+                    "id": "WOAD_LEAF",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "instructions": "Use your necklace of passage to Eagle's Eyrie, catch a golden warbler (bird snare), get the phoenix feather, mine (and keep, do not drop) six clay and complete The Golem. Make sure to collect the gems as mentioned on the wiki.",
+            "expected_gp": 670171,
+            "time_minutes": 30,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "The Golem",
+                    "status": "COMPLETED"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "instructions": "Teleport to your POH (bank in between, for example with Ferox minigame teleport or games necklace, if you don't have enough inv space/don't have all the items on you), collect the white pear for Mountain Daughter, teleport again, enter the dwarven tunnel under White Wolf Mountain, collect two rock cakes from An old dwarf (Rohak, make sure you complete the dialogue or you'll have to get new asgoldian ales). Teleport a third time, speak with the Lady of the Lake for Merlin's Crystal, chop and burn some willow logs for the diary, go to Doric and smith Blurite limbs on his anvil, run north and telegrab a wine of zamorak for the diary, run to the Goblin Village and continue RFD/Goblin to get a Slop of compromise.",
+            "expected_gp": 670151,
+            "time_minutes": 30,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Mountain Daughter",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Merlin's Crystal",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Recipe for Disaster/Goblin",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "instructions": "Teleport to Ferox Enclave with a ring of dueling (already equipped), make 6 soft clay in the bank (leave in bank), grab a necklace of passage (equip), research notes (Rune Mysteries), a steel axe, a rune shortsword (equip) and fill your inventory with bones (make sure to leave one in the bank). Use your necklace of passage to teleport to the Wizards' Tower. Give the bones to Wizard Traiborn, kill the chicken in the basement for the rest of the bones (if needed) and obtain the key for Demon Slayer. Complete Rune Mysteries, have Wizard Sedridor teleport you to the rune essence mine. Run to Draynor Village, start the Lost City quest (until you have to go to Entrana) and continue Prince Ali Rescue until you have the key imprint (rebank at Draynor). Have Aggie make you four blue dyes (you can use the woad leaves on Aggie to skip the dialogue). Pickpocket Martin the Master Gardener for the diary.",
+            "expected_gp": 670151,
+            "time_minutes": 30,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Rune Mysteries",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Lost City",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Prince Ali Rescue",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Demon Slayer",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "BLUE_DYE",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "instructions": "Grab 15 compostable items, fill the bin at the Falador patch. Run to Port Sarim, claim your previously destroyed XP lamps from Veos (one in Port Sarim, one in Piscarillius!) and put them all on Herblore (level 20). Give the bread to the beggar at the jewellery shop (Merlin's Crystal). Visit Thurgo and complete The Giant Dwarf (if you get a bars task you can't do you can refuse it by clicking out of the dialogue and logging out and back in, at the risk of having to go back to the secretary. You can join any consortium you prefer though the Purple Pewter is more efficient if you have full HAM robes - the ones on the east side tend to be fastest to buy ores at the blast furnace). Use the Blast Furnace (costs 2500 gp per 10 minutes) or Superheat Item to make the bars where needed. It is probably best to use the Blast furnace for larger tasks and Superheat for smaller tasks. Start Forgettable Tale\u2026 and get a kelda seed from the drunken dwarf. Find out what random item is required for another one (Rowdy Dwarf in the Laughing Miner pub). Figure out how to obtain the item and weave it into the steps below if you wish. Take the train cart to the pub under the White Wolf Mountain and get (the second) kelda seed from Khorvak.\nAll items should be easy to obtain, although it may be smart to reroll the item (by going through the dialogue again after a few minutes) if you roll a steel dart, anchovy pizza or vampyre dust.\nIf you wear full HAM robes and join the Purple Pewter you get to skip one task, making this the most efficient consortium to join. Furthermore, if you complete three ore tasks and then ask for another one you will get a bars task, but if you prefer you can instead go for another ores task by unequipping the outfit.",
+            "expected_gp": 645048,
+            "time_minutes": 120,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "The Giant Dwarf",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Forgettable Tale...",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "SKILL",
+                    "id": "HERBLORE",
+                    "level": 20
+                }
+            ]
         }
     ]
 }
