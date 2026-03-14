@@ -180,10 +180,10 @@ public class GuidePanel extends PluginPanel
 		JPanel panel = new JPanel(new GridBagLayout());
 		panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		panel.setBorder(BorderFactory.createCompoundBorder(
-			BorderFactory.createMatteBorder(0, 0, 4, 0, ColorScheme.DARK_GRAY_COLOR),
-			new EmptyBorder(8, 8, 8, 8)
+			BorderFactory.createMatteBorder(0, 0, 0, 0, ColorScheme.DARK_GRAY_COLOR),
+			new EmptyBorder(4, 8, 4, 8)
 		));
-		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 60));
+		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 		panel.setAlignmentX(LEFT_ALIGNMENT);
 
 		GridBagConstraints gbc = new GridBagConstraints();
@@ -194,7 +194,7 @@ public class GuidePanel extends PluginPanel
 		gbc.weightx = 1;
 
 		String chapterText = chapter != null ? chapter.getTitle() : "Unknown Chapter";
-		JLabel chapterLabel = new JLabel(chapterText);
+		JLabel chapterLabel = new JLabel("<html><body style='width:160px;'>" + chapterText + "</body></html>");
 		chapterLabel.setFont(FontManager.getRunescapeBoldFont());
 		chapterLabel.setForeground(Color.WHITE);
 		panel.add(chapterLabel, gbc);
@@ -202,9 +202,9 @@ public class GuidePanel extends PluginPanel
 		gbc.gridy = 1;
 		gbc.insets = new Insets(2, 0, 0, 0);
 		String sectionText = section != null ? section.getTitle() : "Unknown Section";
-		JLabel sectionLabel = new JLabel(sectionText);
+		JLabel sectionLabel = new JLabel("<html><body style='width:160px;'>" + sectionText + "</body></html>");
 		sectionLabel.setFont(FontManager.getRunescapeSmallFont());
-		sectionLabel.setForeground(ColorScheme.LIGHT_GRAY_COLOR);
+		sectionLabel.setForeground(Color.WHITE);
 		panel.add(sectionLabel, gbc);
 
 		return panel;
