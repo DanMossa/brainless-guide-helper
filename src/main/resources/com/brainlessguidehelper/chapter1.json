@@ -288,6 +288,101 @@
               ]
             }
           ]
+        },
+        {
+          "id": "1.2",
+          "title": "Some fishing and thieving",
+          "steps": [
+            {
+              "id": 1,
+              "instructions": "Grab your pickaxe and a POH tab, break it, mine 10 clay and 4 copper in the Rimmington mine. Run to Draynor, have Aggie make you 3 yellow dyes and 1 blue dye (you can use the ingredients on Aggie to skip the dialogue). Buy 10 chronicle cards. Grab your pie dish, a bucket, three pots of flour and three redberries.",
+              "expected_gp": 126465,
+              "time_minutes": 30,
+              "completion_conditions": [
+                { "type": "ITEM", "id": "CLAY", "amount": 10 },
+                { "type": "ITEM", "id": "COPPER_ORE", "amount": 4 },
+                { "type": "ITEM", "id": "YELLOW_DYE", "amount": 3 },
+                { "type": "ITEM", "id": "BLUE_DYE", "amount": 1 },
+                { "type": "ITEM", "id": "TELEPORT_CARD", "amount": 10 },
+                { "type": "ITEM", "id": "PIE_DISH", "amount": 1 },
+                { "type": "ITEM", "id": "BUCKET", "amount": 1 },
+                { "type": "ITEM", "id": "POT_OF_FLOUR", "amount": 3 },
+                { "type": "ITEM", "id": "REDBERRIES", "amount": 3 }
+              ]
+            },
+            {
+              "id": 2,
+              "instructions": "Walk to Port Sarim, make 3 pastry doughs in the northern house with the water icon and one by one try to make them into a cooked redberry pie. Buy 16k feathers from Gerrant (for fly fishing later. If you do not have level 46 fletching yet, also buy feathers to get that level. You will gain 6.33 fletching xp per steel arrow made from scratch, or 6 xp per arrow made with the headless arrows already banked). Speak with Thurgo to progress The Knight's Sword. Run to Betty and buy 1500 mind runes (pack), 500 air runes (pack), 1500 water runes (pack), 500 earth runes (pack), 500 fire runes (pack), 200 body runes (manual), 100 chaos runes (manual, 9396 gp vs 9950 gp), 150 death runes for Desert Treasure (manual). Talk to Veos to go to Zeah, talk to Veos again and complete the Client of Kourend (destroy the lamps and reclaim them later to put them on herblore), talk to Veos again to travel to Land's End, grab 1-3 bird snares, five box traps and a butterfly net (https://imgur.com/a/bdU88Xo). Speak with Captain Magoro to return to Port Piscarilius. From here on out, whenever you are walking a lot add feathers to your arrow shafts while moving.",
+              "expected_gp": 35004,
+              "time_minutes": 60,
+              "completion_conditions": [
+                { "type": "ITEM", "id": "FEATHER", "amount": 16000 },
+                { "type": "ITEM", "id": "MIND_RUNE", "amount": 1500 },
+                { "type": "ITEM", "id": "AIR_RUNE", "amount": 500 },
+                { "type": "ITEM", "id": "WATER_RUNE", "amount": 1500 },
+                { "type": "ITEM", "id": "EARTH_RUNE", "amount": 500 },
+                { "type": "ITEM", "id": "FIRE_RUNE", "amount": 500 },
+                { "type": "ITEM", "id": "BODY_RUNE", "amount": 200 },
+                { "type": "ITEM", "id": "CHAOS_RUNE", "amount": 100 },
+                { "type": "ITEM", "id": "DEATH_RUNE", "amount": 150 },
+                { "type": "QUEST", "id": "Client of Kourend", "status": "COMPLETED" },
+                { "type": "ITEM", "id": "BIRD_SNARE", "amount": 1 },
+                { "type": "ITEM", "id": "BOX_TRAP", "amount": 5 },
+                { "type": "ITEM", "id": "BUTTERFLY_NET", "amount": 1 }
+              ]
+            },
+            {
+              "id": 3,
+              "instructions": "Run to Piscarilius, grab wind strike runes and your stew, start The Queen of Thieves and continue the quest until you are asked to search Councillor Hughes' home (browse the Warrens General Store in between for the diary). Head south and kill a Giant Rat northeast of Hosidius square for its meat and the giant rat bone, talk to the Estate Agent (this is needed to be able to move your POH to Kourend later). Buy a compost pack from Vannah. Pickpocket from the fruit stalls in the house on the east of Hosidius square to level 36 thieving. Bank one jangerberry (optionally: bank two as it's a possible Fairytale pt. 1 item), all the strange fruit and the golovanova tops (you will need at least 2 tops). Run west and dig up a saltpetre for the diary, then run to Land's End and charter a ship to Aldarin. There thieve the upstairs chest in the western villa (Chest (Aldarin Villas) - OSRS Wiki) to a bit over level 42 thieving (46,512 xp!). You can run between the two fruit stalls for higher xp rates, but this depletes run energy. You can eat the papayas you get to restore some of that. Use the strange fruits for energy restoration anywhere you please, they are a budget alternative to energy potions at low level and are not required for anything in particular later.",
+              "expected_gp": 33004,
+              "time_minutes": 120,
+              "completion_conditions": [
+                { "type": "QUEST", "id": "The Queen of Thieves", "status": "STARTED" },
+                { "type": "ITEM", "id": "RAW_RAT_MEAT", "amount": 1 },
+                { "type": "ITEM", "id": "GIANT_RAT_BONE", "amount": 1 },
+                { "type": "ITEM", "id": "COMPOST", "amount": 100 },
+                { "type": "SKILL", "id": "THIEVING", "level": 42 },
+                { "type": "ITEM", "id": "JANGERBERRY", "amount": 1, "location": "BANK" },
+                { "type": "ITEM", "id": "GOLOVANOVA_FRUIT_TOP", "amount": 2, "location": "BANK" },
+                { "type": "ITEM", "id": "SALTPETRE", "amount": 1 }
+              ]
+            },
+            {
+              "id": 4,
+              "instructions": "Use your chronicle to teleport to Varrock, buy one of each elemental staff from Zaff. Use clan chat \"osrs soa\" to find a partner. Collect the weapon store key from your Shield of Arrav partner and kill the Weaponsmaster to grab two Phoenix crossbows for Shield of Arrav (this fight may be tough, use magic and bread or cakes), take them to Katrine and collect the half of the Shield of Arrav. Finish the Shield of Arrav at the Varrock Museum (optional: do this earlier so you don't make your partner wait). Grab your soda ash, sand, spade, leather gloves, strike runes and Falador tab. Take the quetzal to Varlamore, start and continue Ethically Acquired Antiquities until the step where you have to visit Port Sarim. Break your Falador tab, collect the portrait for The Knight's Sword, speak with Sir Renitee for the diary, turn the soda ash and sand into molten glass. Kill a duck (with magic), complete Pirate's Treasure. Now bank, grab raw beef, chicken and rat meat, an orange and blue dye (make the orange dye with red + yellow if needed), 2 iron ore, 4 copper ore, 6 clay, 2 cheese, your gp stack and a couple of food (3+ cakes or wines). Optional: swap one cheese for one cake/wine for Witch's House. Run north, do Doric's Quest. Go back east and start Below Ice Mountain at Wilow, safespot a bear on the trees north of Falador for the meat, fur and ribs. Complete Goblin Diplomacy, Witch's House (there are safespots for all the forms of the Witch's experiment!) and Druidic Ritual. Buy an eye of newt pack, an empty vial (not a pack) and a pestle and mortar from Jatix. Start Fishing Contest. Minigame teleport to clan wars and restore run energy at Ferox, bank and grab two iron bars, a POH tab, the portrait, a few (3-5) cakes and a pickaxe.",
+              "expected_gp": 27748,
+              "time_minutes": 60,
+              "completion_conditions": [
+                { "type": "ITEM", "id": "STAFF_OF_AIR", "amount": 1 },
+                { "type": "ITEM", "id": "STAFF_OF_WATER", "amount": 1 },
+                { "type": "ITEM", "id": "STAFF_OF_EARTH", "amount": 1 },
+                { "type": "ITEM", "id": "STAFF_OF_FIRE", "amount": 1 },
+                { "type": "QUEST", "id": "Shield of Arrav", "status": "COMPLETED" },
+                { "type": "QUEST", "id": "Ethically Acquired Antiquities", "status": "STARTED" },
+                { "type": "ITEM", "id": "MOLTEN_GLASS", "amount": 7 },
+                { "type": "QUEST", "id": "Pirate's Treasure", "status": "COMPLETED" },
+                { "type": "QUEST", "id": "Doric's Quest", "status": "COMPLETED" },
+                { "type": "QUEST", "id": "Below Ice Mountain", "status": "STARTED" },
+                { "type": "QUEST", "id": "Goblin Diplomacy", "status": "COMPLETED" },
+                { "type": "QUEST", "id": "Witch's House", "status": "COMPLETED" },
+                { "type": "QUEST", "id": "Druidic Ritual", "status": "COMPLETED" },
+                { "type": "ITEM", "id": "EYE_OF_NEWT_PACK", "amount": 1 },
+                { "type": "ITEM", "id": "EMPTY_VIAL", "amount": 1 },
+                { "type": "ITEM", "id": "PESTLE_AND_MORTAR", "amount": 1 },
+                { "type": "QUEST", "id": "Fishing Contest", "status": "STARTED" }
+              ]
+            },
+            {
+              "id": 5,
+              "instructions": "Break another POH tab and return to Thurgo. Mine two blurite ore. Go back to Thurgo and make the sword. Run to a trader crewmember in Port Sarim for Ethically Acquired Antiquities, then talk to Betty to progress that quest. Run to Falador east bank. Grab your coins, ghostspeak amulet and skull. Pay to move your house to Pollnivneach at the estate agent. Complete The Knight's Sword. Smelt the blurite ore into a bar.",
+              "expected_gp": 20248,
+              "time_minutes": 60,
+              "completion_conditions": [
+                { "type": "QUEST", "id": "The Knight's Sword", "status": "COMPLETED" },
+                { "type": "ITEM", "id": "BLURITE_BAR", "amount": 1 }
+              ]
+            }
+          ]
         }
       ]
     }

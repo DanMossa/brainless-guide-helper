@@ -1,10 +1,11 @@
 package com.brainlessguidehelper;
 
 import com.brainlessguidehelper.models.Guide;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import javax.inject.Inject;
 import javax.inject.Singleton;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -17,9 +18,10 @@ public class GuideManager {
     @Getter
     private Guide guide;
 
-    @Inject
-    public GuideManager(Gson gson) {
-        this.gson = gson;
+    public GuideManager() {
+        this.gson = new GsonBuilder()
+            .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+            .create();
     }
 
     public void loadGuide() {

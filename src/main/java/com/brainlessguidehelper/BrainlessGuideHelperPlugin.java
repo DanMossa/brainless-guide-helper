@@ -1,6 +1,6 @@
 package com.brainlessguidehelper;
 
-import com.brainlessguidehelper.models.Step;
+
 import com.google.inject.Provides;
 import java.awt.image.BufferedImage;
 import javax.inject.Inject;
@@ -67,6 +67,7 @@ public class BrainlessGuideHelperPlugin extends Plugin
 
 		clientToolbar.addNavigation(navigationButton);
 
+		guidePanel.updateDataOnClientThread();
 		guidePanel.rebuild();
 		log.debug("Brainless Guide Helper started!");
 	}
@@ -84,15 +85,7 @@ public class BrainlessGuideHelperPlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			Step currentStep = guideProgressManager.getCurrentStep();
-			if (currentStep != null)
-			{
-				log.debug("Current step: {} - {}", currentStep.getId(), currentStep.getInstructions());
-			}
-			else
-			{
-				log.debug("All guide steps complete!");
-			}
+			guidePanel.updateDataOnClientThread();
 			guidePanel.rebuild();
 		}
 	}
@@ -100,6 +93,7 @@ public class BrainlessGuideHelperPlugin extends Plugin
 	@Subscribe
 	public void onGameTick(GameTick gameTick)
 	{
+		guidePanel.updateDataOnClientThread();
 		guidePanel.rebuild();
 	}
 

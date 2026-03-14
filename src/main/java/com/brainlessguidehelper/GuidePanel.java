@@ -12,7 +12,9 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
@@ -41,6 +43,9 @@ public class GuidePanel extends PluginPanel
 	private final PlayerStateTracker playerStateTracker;
 
 	private Step viewedStep;
+	private Step cachedCurrentStep;
+	private boolean cachedViewedStepComplete;
+	private final Map<Requirement, Boolean> cachedRequirementStatuses = new HashMap<>();
 
 	public GuidePanel(GuideProgressManager progressManager, GuideManager guideManager, PlayerStateTracker playerStateTracker)
 	{
@@ -70,7 +75,7 @@ public class GuidePanel extends PluginPanel
 
 			if (viewedStep == null)
 			{
-				viewedStep = progressManager.getCurrentStep();
+				viewedStep = cachedCurrentStep;
 			}
 
 			if (viewedStep == null)
@@ -130,8 +135,43 @@ public class GuidePanel extends PluginPanel
 
 	public void goToCurrentStep()
 	{
-		viewedStep = progressManager.getCurrentStep();
+		viewedStep = cachedCurrentStep;
 		rebuild();
+	}
+
+	/**
+	 * Pre-compute data that requires the client thread.
+	 * Must be called from the client thread before rebuild().
+	 */
+	public void updateDataOnClientThread()
+	{
+		cachedCurrentStep = progressManager.getCurrentStep();
+
+		Step stepToView = viewedStep != null ? viewedStep : cachedCurrentStep;
+		cachedRequirementStatuses.clear();
+
+		if (stepToView != null)
+		{
+			cachedViewedStepComplete = progressManager.isStepComplete(stepToView);
+			cacheRequirements(stepToView.getPrerequisites());
+			cacheRequirements(stepToView.getCompletionConditions());
+		}
+		else
+		{
+			cachedViewedStepComplete = false;
+		}
+	}
+
+	private void cacheRequirements(List<Requirement> requirements)
+	{
+		if (requirements == null)
+		{
+			return;
+		}
+		for (Requirement req : requirements)
+		{
+			cachedRequirementStatuses.put(req, playerStateTracker.isRequirementMet(req));
+		}
 	}
 
 	private JPanel buildHeaderPanel(Chapter chapter, Section section)
@@ -178,7 +218,7 @@ public class GuidePanel extends PluginPanel
 		));
 		panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
-		boolean complete = progressManager.isStepComplete(step);
+		boolean complete = cachedViewedStepComplete;
 
 		JLabel stepTitle = new JLabel("Step " + step.getId());
 		stepTitle.setFont(FontManager.getRunescapeBoldFont());
@@ -223,7 +263,7 @@ public class GuidePanel extends PluginPanel
 
 		for (Requirement req : requirements)
 		{
-			boolean met = playerStateTracker.isRequirementMet(req);
+			boolean met = cachedRequirementStatuses.getOrDefault(req, false);
 			JLabel reqLabel = new JLabel(formatRequirement(req));
 			reqLabel.setFont(FontManager.getRunescapeSmallFont());
 			reqLabel.setForeground(met ? COLOR_MET : COLOR_NOT_MET);
@@ -350,7 +390,7 @@ public class GuidePanel extends PluginPanel
 
 	private String formatRequirement(Requirement req)
 	{
-		boolean met = playerStateTracker.isRequirementMet(req);
+		boolean met = cachedRequirementStatuses.getOrDefault(req, false);
 		String icon = met ? "\u2713" : "\u2717";
 
 		switch (req.getType())
