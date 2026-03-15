@@ -695,6 +695,114 @@
                     "status": "COMPLETED"
                 }
             ]
+        },
+        {
+            "id": 29,
+            "instructions": "Do tithe farming until you have level 62. This should give you the points to buy herb sack, autoweed and the seed box points. Level 62 is perfect for starting boosting (garden pies from the chef's guild, and later in Cam Torum) medium farming contracts. This level may be enough to get you seed box as well, and if not you could choose to stay a bit longer to buy that item as well. Go to the farming guild (games neck to wintertodt into minecart), get your first contract and preplant all other patches (if necessary go pickpocket master farmers for seeds). Maintain farming contracts as much as possible. You will need a whiteberry soon, so make sure to grow a whiteberry bush.\nWhile your farming is level 51-53 you can use garden pies to boost for Bologano seeds (takes approximately 6-7 pies total for these levels depending on the method) to significantly increase your xp. If you ever run out of garden pies, buy some more.\nFarming contracts begin here. The fastest and most efficient way to get to the farming guild is using the Kourend library teleport on the Arceuus spellbook or games necklace to wintertodt into the minecart to the farming guild, blowing glass or fletching arrow shafts/headless arrows as you move. On your first trip to the Farming guild, first travel to the North side outside the guild and chop mahogany logs for the diary step.\nIf you downgrade into a farming contract you do not have the seeds for the best way to get some is by pickpocketing master farmers.\nPreplanting and skipping contracts that take a long time (>3 hours for medium tier) to complete is an extremely good strategy to increase your contracts completed per day, see also the (hard contract, but applicable to medium contracts as well) flow chart in the contracts section of the farming guide below.\nThe first time you go to the farming guild, grab six yellow dyes and seven red dyes from the shelves in the Getting Ahead farm. Mix one yellow and red dye to make an orange dye.\nAmateur herb runs begin here - meaning herb runs where you only visit the herb patches that are easy to access. Right now that is just the Morytania patch (Fenkenstrain teleport) and Varlamore patch (fairy ring AJP - though it is also completely fine to disregard this patch entirely), and soon you will add the Falador patch (Explorer's ring teleport). Make sure to farm as soon as reasonably possible:\n22 limpwurt roots (one is for the strength potion easy Kourend diary step, complete it at your convenience using the Kharedst's teleport and then complete the easy diary, putting the xp on Herblore. Another is for the Varrock medium diary step. Make sure to plant at least one in Catherby for the diary)\nWhiteberries (in either the Champions' Guild, the Farming Guild patch or the Ardougne Monastery patch).\nTwo toadflax for agility potions (for Tai Bwo Wannai Trio and Making Friends with My Arm).\nOn one of your (future) herb runs plant strawberries in Ardougne for the diary (both patches recommended).\nYou will need some prayer potions soon, so make sure to plant a set of ranarrs and snape grass early as well.\nPlant watermelons to harvestfill for making more compost.\nGrowing harralanders for making energy potions is very reasonable, and they will come in handy.\nGrow at least 20 nightshade for the Seren fight in Song of the Elves. You won't need this for a long time, but you may as well grow them early! If you worry you might not one-shot the fight, get 30-40 of them instead.\nNote: until you get to Chapter 2, Step 66 you will be stuck with 'amateur' herb runs as the best herb run option. It is recommended to postpone herb runs until that step, while maintaining farming contracts and other hourlies. If you find you need herblore levels, potions or want to do herb runs anyway, check the farming guide linked below and ignore patches that are difficult to reach (on the Arceuus spellbook), doing runs with fewer patches instead. This means, for example, only visiting the Falador farming patch as many times per day as you have explorer's ring teleports. Until Chapter 2, Step 66 all mentions of herb runs refer to optional, low efficiency herb runs.\nWhen you get palm tree seeds, make sure to plant your first in Brimhaven and second outside the Tree Gnome Village.\nWhen you get yew tree seeds, make sure to plant one in Varrock after level 68 farming and 60 woodcutting, to dig up for two yew roots for the diary.\nBased on our estimates you will need to complete around 200-250 farming contracts (starting with medium, downgrading if you roll something slow) to bank the herbs for level 70 using Barblore later. Even if you aren't ready to farm the herbs yet it is worth collecting the seeds.\nIf you are asked to complete a contract that you would like to do but for which you don't have the seeds it is worth to pickpocket master farmers for a bit (for example in Draynor or north of Ardougne) to get it. The loot scales with your farming level (and the failure chance with your thieving level), but according to this Mod Ash tweet the farming scaling only has an impact on the ranarr, snapdragon and torstol rates so the other seeds are fine.\nSave 6 spirit tree seeds to plant across the world and in your POH (also keep in mind that they can get diseased and die while growing), trade all others in for t5 farming contracts.\nOnce you hit level 85 (boostable) farming you can plant Celastrus saplings, and harvest them for bark which makes battlestaves. If you want a bit more leeway with GP you can harvest and replant these at the end of the day/when you won't be doing farming contracts for the next 13 hours or so even if you're not on a contract. You should typically have a ton of seeds by the time you can plant them. If you are ever low on money you can alch the staves from celastrus harvests 'raw', or blow and charge more orbs for them.\nThis is particularly relevant for HCIM, who might chicken out of wish to avoid killing green dragons in the wilderness later and then lack green d'hide bodies gp.\nOnce you hit level 58 herblore, go back to Tithe farm to buy the herb sack.\nThe best method to do Tithe farming at this level is 25x4 Half-Replant Gricoller's Tithe Farm! Fastest XP (~120k xp/hr) but using regular watering cans - no need to buy Gricoller's can. Also you can left click to water the plants, it is not necessary to manual click water except on the first lap, immediately after planting. This may use energy potions at your agility level, despite the agility rework making it much more doable. As an alternative there is 20x5: Tithe Farm Updated (100 fruits in 19min 24sec - No Stams/Energy potions).\nYou can find a complete farming guide here: 20220622FarmingGuide. It is more accurate and complete than the farming advice scattered throughout BRUHsailer. Please use this to plan your farming methods going forward. This guide also has videos and resources on tithe farming.",
+            "expected_gp": 235737,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "SKILL",
+                    "id": "FARMING",
+                    "level": 62
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "instructions": "Travel to Port Sarim (Pest Control minigame teleport) with 2k gp, a hammer, wind strikes, telegrab runes, varrock teleport runes, 90 steel nails, 3 planks, 10 willow logs (noted), 2 regular logs (noted) and 11 yew logs (noted) and 6 willow branches. Speak with Klarense and repair the Lady Lumbridge to progress Dragon Slayer I. Get the jailed goblin map piece, collect the security book from the Security Guard (upstairs) for the diary. Run to the Falador farm loom and craft a basket for the diary. Deposit your combat items, then take the boat to Entrana, unlock the balloon transport to Varrock (deposit the noted logs in the storage to use them). Take the balloon back to Entrana. Unlock the transport to Castle Wars, take the balloon back to Entrana and head to Castle Wars again for the diary.\nIf you want to complete some diaries, kill hobgoblins for a limpwurt root/grow them, then complete and collect the Varrock medium diary.",
+            "expected_gp": 233737,
+            "time_minutes": 0,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Dragon Slayer I",
+                    "status": "STARTED"
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "instructions": "You should be at least level 42 hunter by now. Go to Puro Puro, camp a Young impling spawn for a yew longbow (keep a bow string) and catch an essence or eclectic impling for the diary. Note: there is a bug where you can do Temple of Ikov without a yew bow, using darts or other thrown weapons (of any kind) with ice arrows equipped. If you can't stand hunter and consider this legitimate gameplay instead, as opposed to bug abuse, you could opt for that. Grab a lockpick. Do Temple of Ikov, enter the Ranging guild for the diary and buy 10 rune thrownaxes, steal from the Hemenester chest for the diary, do Desert Treasure (kill a shadow hound in the Shadow Dungeon for the diary, also start Curse of the Empty Lord and finish Dwarf Cannon during that diamond, and collect trollweiss after the ice diamond step/after killing 5 trolls behind the ice gate, your choice) from start to finish. Use your death runes and prayer potions here.\nIf you did not get at least 12 magic logs from Wintertodt chop a magic tree (for example in the Tree Gnome Stronghold) to get enough logs.\nUsing the minigame teleport to Tithe(/Chronicle to Varrock, but mind your charges), mine 4 full inventories of soft clay (one bracelet of clay each) before/between the steps of Desert Treasure.\nDessous is harmless if you alternate between ranged and melee protection prayer every tick (https://gyazo.com/c91fa68cc527f21bcfbe882cf5e68cb9). Catch a swamp lizard along the way for the Morytania medium diary.\nFareed can be kited inside the room, bringing energy potions.\nDamis can be safespotted on a rat in the northeastern part of the room.\nKamil is a tough fight and requires restore potions. Make sure to bring fire bolts and two rings of recoil.",
+            "expected_gp": 227287,
+            "time_minutes": 420,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Temple of Ikov",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Desert Treasure",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Dwarf Cannon",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "QUEST",
+                    "id": "Curse of the Empty Lord",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "SKILL",
+                    "id": "HUNTER",
+                    "level": 42
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "instructions": "Make 4 inventories of Paddewwa tabs:\nRing of dueling, complete Prince Ali Rescue and start Temple of the Eye (get the eye amulet, bank it) along the way, boat to Unkah (Tempoross)\nLow level earth orbs shows a video guide with all the steps for charging orbs. Buy Shantay passes to get into the desert from the Ruins of Unkah (you won't be able to pass freely unlike in the video):\nSwap to the Ancient spellbook\nMake an inv, suicide outside the door of the final room inside the pyramid to an npc\nTeleport to Paddewwa for the diary.\nSuicide at corp twice with 27 soft clay each\nSave 6 soft clay for later use in the bank.\nGo back to the room under the pyramid, make three invs at once, collect all.\nRevert to the normal spellbook when you have made the last tab.\nHCIMs: unfortunately you have to run for all four inventories of tabs.",
+            "expected_gp": 227987,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Temple of the Eye",
+                    "status": "STARTED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "PADDEWWA_TELEPORT",
+                    "amount": 108
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "instructions": "Teleport to Varrock, then run to the quetzal to travel to Civitas illa Fortis. Start and complete Twilight's Promise - this requires two combat styles (mage and melee recommended). From this point on you can include the Kastori fruit tree and calquat tree patch in your tree runs (if you have the appropriate farming level and spare seeds). Travel to Tal Teklan by quetzal. If you have at least 37 construction, start and complete Scrambled!. Buy cosmic runes at the Tal Teklan Rune Shop until you have 4900 total. Charge 1590 earth orbs (with corp suicide method. This costs ~33 tabs, 7 games necklaces and 9 rings of dueling). If you (somehow?) aren't 60 magic yet use your Wizard's Mind Bombs to boost at first.\nLow level earth orbs shows a video guide with all the steps for charging orbs.\nShort guide to low level earth orbs:\nRun to the earth obelisk with 25 unpowered orbs a feather, rock cake (or enchanted symbol), paddewwa tab to get there and 3 valuable items (dueling ring, games neck, earth staff recommended. Throughout this method you will keep your gravestone up, so make sure you always have at least one item (the feather) in there! Never collect the feather unless you're done with this step. Rock cake down to low health and die to Chronozon or the poison from a spider (at the narrow entrance) at the earth obelisk.\nTeleport to the bank (if you do the entire process on a PvP world you are already at a bank chest and can skip that teleport). Sip an antipoison in the bank (to prevent poison splats from the spider interrupting your charging. Alternatively, you can have a skeleton/black demon attack you and run past while the spiders cannot attack). Grab a looting bag, cosmic runes, paddewwa tab, 25 unpowered orbs (24 + Wizard Mind Bomb if needed). Break the tab, run to the earth obelisk, charge all the orbs, put them in the looting bag, grab your orbs from the gravestone (leave one item in the gravestone!), charge them, teleport out to Castle Wars/Ferox and bank.\nGrab your 3 valuable items and 27 orbs, teleport to corporeal beast and have him kill you. Note: do NOT purchase an instance, this will cost 100k with no upside.\nGo to step 2.\nThis video shows a (different) high level method with an edgeville respawn point, the above is a low-level alternative Improved Gravestone Air Orb Charging\nOnce done, collect any leftover orbs from death's office.\nOptional: charge an air orb for the diary, boosting with a Wizard's Mind Bomb.",
+            "expected_gp": 5987,
+            "time_minutes": 180,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "Twilight's Promise",
+                    "status": "COMPLETED"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "EARTH_ORB",
+                    "amount": 1590
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "instructions": "Complete The Hand in the Sand (no multiquesting, unfortunately. Whiteberry from contracts should be grown by now). Collect sand from Bert for the diary.",
+            "expected_gp": 5837,
+            "time_minutes": 60,
+            "completion_conditions": [
+                {
+                    "type": "QUEST",
+                    "id": "The Hand in the Sand",
+                    "status": "COMPLETED"
+                }
+            ]
         }
     ]
 }
