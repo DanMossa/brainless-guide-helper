@@ -6,6 +6,7 @@ import com.brainlessguidehelper.models.Requirement;
 import com.brainlessguidehelper.models.Section;
 import com.brainlessguidehelper.models.Step;
 import com.brainlessguidehelper.models.StepOption;
+import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -71,7 +72,14 @@ public class GuideProgressManager
 
 		// Evaluate the step's default completion conditions
 		List<Requirement> conditions = step.getCompletionConditions();
-		return playerStateTracker.areAllRequirementsMet(conditions);
+		if (playerStateTracker.areAllRequirementsMet(conditions))
+		{
+			return true;
+		}
+
+		// Forward inference: if all durable conditions are met and a later step
+		// also has all its durable conditions met, the user has passed this step
+		return isStepImplicitlyComplete(step);
 	}
 
 	/**
@@ -251,6 +259,114 @@ public class GuideProgressManager
 			}
 		}
 		return null;
+	}
+
+	// --- Forward Inference ---
+
+	/**
+	 * Check if a step can be inferred as complete based on durable conditions.
+	 * A step is implicitly complete if:
+	 * 1. All its durable (non-ITEM) conditions are met
+	 * 2. A later step in guide order also has all its durable conditions met
+	 *
+	 * This handles the case where a user has progressed past a step but the
+	 * transient ITEM conditions (items consumed/used) no longer pass.
+	 */
+	private boolean isStepImplicitlyComplete(Step step)
+	{
+		List<Requirement> durableConditions = getDurableConditions(step.getCompletionConditions());
+
+		// If there are no durable conditions, we can't infer anything
+		if (durableConditions.isEmpty())
+		{
+			return false;
+		}
+
+		// Check that all durable conditions for this step are met
+		if (!playerStateTracker.areAllRequirementsMet(durableConditions))
+		{
+			return false;
+		}
+
+		// Look for a later step whose durable conditions are also all met
+		List<Step> allSteps = getAllStepsInOrder();
+		boolean foundCurrentStep = false;
+
+		for (Step s : allSteps)
+		{
+			if (s.getId() == step.getId())
+			{
+				foundCurrentStep = true;
+				continue;
+			}
+
+			if (!foundCurrentStep)
+			{
+				continue;
+			}
+
+			// This is a later step — check if its durable conditions are all met
+			List<Requirement> laterDurable = getDurableConditions(s.getCompletionConditions());
+			if (!laterDurable.isEmpty() && playerStateTracker.areAllRequirementsMet(laterDurable))
+			{
+				log.debug("Step {} implicitly complete: later step {} has durable conditions met",
+					step.getId(), s.getId());
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Filter a list of requirements to only include durable (non-ITEM) conditions.
+	 * Durable conditions are SKILL, QUEST, DIARY, VARBIT, and VARP — these only
+	 * ever increase and can never become un-met once satisfied.
+	 */
+	private List<Requirement> getDurableConditions(List<Requirement> conditions)
+	{
+		List<Requirement> durable = new ArrayList<>();
+		if (conditions == null)
+		{
+			return durable;
+		}
+		for (Requirement req : conditions)
+		{
+			if (req.getType() != Requirement.RequirementType.ITEM)
+			{
+				durable.add(req);
+			}
+		}
+		return durable;
+	}
+
+	/**
+	 * Collect all steps from the guide in order (chapters -> sections -> steps).
+	 */
+	private List<Step> getAllStepsInOrder()
+	{
+		List<Step> allSteps = new ArrayList<>();
+		Guide guide = guideManager.getGuide();
+		if (guide == null || guide.getChapters() == null)
+		{
+			return allSteps;
+		}
+		for (Chapter chapter : guide.getChapters())
+		{
+			if (chapter.getSections() == null)
+			{
+				continue;
+			}
+			for (Section section : chapter.getSections())
+			{
+				if (section.getSteps() == null)
+				{
+					continue;
+				}
+				allSteps.addAll(section.getSteps());
+			}
+		}
+		return allSteps;
 	}
 
 	private StepOption findOption(Step step, String optionId)
