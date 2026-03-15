@@ -1,4 +1,30 @@
 {
     "id": 1,
-    "title": "Chapter 1: Get to da chopper earth staves"
+    "title": "Chapter 1: Get to da chopper earth staves",
+    "expected_stats": [
+        { "type": "SKILL", "id": "ATTACK", "level": 46 },
+        { "type": "SKILL", "id": "STRENGTH", "level": 50 },
+        { "type": "SKILL", "id": "DEFENCE", "level": 34 },
+        { "type": "SKILL", "id": "HITPOINTS", "level": 37 },
+        { "type": "SKILL", "id": "RANGED", "level": 45 },
+        { "type": "SKILL", "id": "PRAYER", "level": 43 },
+        { "type": "SKILL", "id": "MAGIC", "level": 63 },
+        { "type": "SKILL", "id": "RUNECRAFT", "level": 24 },
+        { "type": "SKILL", "id": "CONSTRUCTION", "level": 38 },
+        { "type": "SKILL", "id": "AGILITY", "level": 51 },
+        { "type": "SKILL", "id": "HERBLORE", "level": 40 },
+        { "type": "SKILL", "id": "THIEVING", "level": 78 },
+        { "type": "SKILL", "id": "CRAFTING", "level": 55 },
+        { "type": "SKILL", "id": "FLETCHING", "level": 48 },
+        { "type": "SKILL", "id": "SLAYER", "level": 16 },
+        { "type": "SKILL", "id": "HUNTER", "level": 49 },
+        { "type": "SKILL", "id": "MINING", "level": 44 },
+        { "type": "SKILL", "id": "SMITHING", "level": 41 },
+        { "type": "SKILL", "id": "FISHING", "level": 74 },
+        { "type": "SKILL", "id": "COOKING", "level": 60 },
+        { "type": "SKILL", "id": "FIREMAKING", "level": 89 },
+        { "type": "SKILL", "id": "WOODCUTTING", "level": 70 },
+        { "type": "SKILL", "id": "FARMING", "level": 63 },
+        { "type": "SKILL", "id": "SAILING", "level": 1 }
+    ]
 }

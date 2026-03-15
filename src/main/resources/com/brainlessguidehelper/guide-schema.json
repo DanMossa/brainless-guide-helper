@@ -10,6 +10,11 @@
         "properties": {
           "id": { "type": "integer" },
           "title": { "type": "string" },
+          "expected_stats": {
+            "description": "Expected skill levels and other stats at the end of this chapter, assuming the guide was followed completely.",
+            "type": "array",
+            "items": { "$ref": "#/definitions/requirement" }
+          },
           "sections": {
             "type": "array",
             "items": {
